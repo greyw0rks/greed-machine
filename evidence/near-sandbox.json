@@ -1,0 +1,72 @@
+{
+  "environment": "local-near-sandbox",
+  "sdk": "5.29.1",
+  "wasmSha256": "2d7a884912e5294e244593f0ce525ec39198bc38bc25790786200258da534381",
+  "passed": true,
+  "reports": [
+    {
+      "name": "atomic deploy and private initialization",
+      "passed": true
+    },
+    {
+      "name": "TypeScript / WASM parity: valid allocation",
+      "passed": true
+    },
+    {
+      "name": "TypeScript / WASM parity: spend and exposure attack",
+      "passed": true
+    },
+    {
+      "name": "TypeScript / WASM parity: unauthorized receiver",
+      "passed": true
+    },
+    {
+      "name": "TypeScript / WASM parity: disallowed liquidity venue",
+      "passed": true
+    },
+    {
+      "name": "TypeScript / WASM parity: expired proposal",
+      "passed": true
+    },
+    {
+      "name": "TypeScript / WASM parity: stale feed",
+      "passed": true
+    },
+    {
+      "name": "TypeScript / WASM parity: old mandate",
+      "passed": true
+    },
+    {
+      "name": "TypeScript / WASM parity: hold with stale feed",
+      "passed": true
+    },
+    {
+      "name": "TypeScript / WASM parity: hold spending capital",
+      "passed": true
+    },
+    {
+      "name": "TypeScript / WASM parity: oversized integer without overflow",
+      "passed": true
+    },
+    {
+      "name": "future feed and non-integer amount rejected",
+      "passed": true
+    },
+    {
+      "name": "persisted decisions, input commitment and replay rejection",
+      "passed": true
+    },
+    {
+      "name": "outsider and guardian cannot record proofs or change the mandate",
+      "passed": true
+    },
+    {
+      "name": "guardian pause blocks allocations and operator cannot unpause",
+      "passed": true
+    },
+    {
+      "name": "immutable mandate limits and reserve parity",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+export default function NotFound(){return <main id="main" className="error-page"><h1>This page is off the map.</h1><p>The page you requested does not exist.</p><a className="gm-button" href="/app">Explore the machine</a></main>;}

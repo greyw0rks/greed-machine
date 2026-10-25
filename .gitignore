@@ -1,0 +1,13 @@
+.env*
+!.env.example
+.next/
+node_modules/
+data/
+.impeccable/
+playwright-report/
+test-results/
+npm-debug.log*
+contracts/**/target/
+.near/
+.atlas/
+*.tsbuildinfo

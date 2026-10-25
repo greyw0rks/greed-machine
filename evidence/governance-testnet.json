@@ -1,0 +1,69 @@
+{
+  "network": "testnet",
+  "purpose": "fixed-supply-governance-demo",
+  "account": "token.greed-policy-8a07c217.testnet",
+  "codeHash": "4Xg7MLo6sgEEQ64kGcfnWiQYtSpXdQonSEyqr6kJ3LxC",
+  "wasmBytes": 186049,
+  "totalSupply": "1000000",
+  "decimals": 0,
+  "holders": [
+    [
+      "elchapi.testnet",
+      "650000"
+    ],
+    [
+      "greed-policy-8a07c217.testnet",
+      "250000"
+    ],
+    [
+      "guardian.greed-policy-8a07c217.testnet",
+      "100000"
+    ]
+  ],
+  "funding": "3 faucet-funded testnet NEAR from the existing proof operator",
+  "treasurySettlement": "synthetic",
+  "credentialsPath": ".near/token-credentials.json",
+  "transactions": [
+    {
+      "step": "create-token-subaccount",
+      "hash": "DG8S8NnwRHMLyaRytJGVNwGYZn2VMS1Ainra5E3e4dsA"
+    },
+    {
+      "step": "deploy-and-initialize-token",
+      "hash": "4LMWs1UsFJp3tWpjqFP4e5udrSSK2ZKLcoGx1M1PYTad"
+    }
+  ],
+  "completed": true,
+  "verifiedAt": "2026-10-25T13:23:31.619Z",
+  "snapshot": {
+    "environment": "testnet",
+    "tokenAccount": "token.greed-policy-8a07c217.testnet",
+    "codeHash": "4Xg7MLo6sgEEQ64kGcfnWiQYtSpXdQonSEyqr6kJ3LxC",
+    "blockHash": "6LrV5YmJ83W5WpRSv6x6JZVSNTtgQsqeXg6HMBccQd2Q",
+    "blockHeight": 274705988,
+    "timestamp": 1792934601371,
+    "totalSupply": "1000000",
+    "decimals": 0,
+    "symbol": "GREED"
+  },
+  "balances": [
+    {
+      "accountId": "elchapi.testnet",
+      "initialAllocation": "650000",
+      "rawBalance": "650000",
+      "blockHash": "6LrV5YmJ83W5WpRSv6x6JZVSNTtgQsqeXg6HMBccQd2Q"
+    },
+    {
+      "accountId": "greed-policy-8a07c217.testnet",
+      "initialAllocation": "250000",
+      "rawBalance": "250000",
+      "blockHash": "6LrV5YmJ83W5WpRSv6x6JZVSNTtgQsqeXg6HMBccQd2Q"
+    },
+    {
+      "accountId": "guardian.greed-policy-8a07c217.testnet",
+      "initialAllocation": "100000",
+      "rawBalance": "100000",
+      "blockHash": "6LrV5YmJ83W5WpRSv6x6JZVSNTtgQsqeXg6HMBccQd2Q"
+    }
+  ]
+}

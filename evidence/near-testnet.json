@@ -1,0 +1,289 @@
+{
+  "network": "testnet",
+  "purpose": "synthetic-policy-proof",
+  "account": "greed-policy-8a07c217.testnet",
+  "guardian": "guardian.greed-policy-8a07c217.testnet",
+  "codeHash": "44XiT4dS4JYGCfa3Gb3axZKuD6XckA4VMYNyaKzfWMKN",
+  "wasmBytes": 194554,
+  "recordLimit": 1000,
+  "funding": "Fresh faucet-funded testnet account; guardian receives 0.2 testnet NEAR",
+  "syntheticPrincipal": "100000 USDC",
+  "records": [
+    {
+      "connected": true,
+      "chainId": "testnet",
+      "blockHeight": 274684138,
+      "blockHash": "DXZUovLgSfVcKZMnbLw4ZhTMq2UGo93iitVEAMiaFtqD",
+      "observedAt": "2026-10-25T09:54:11.736Z",
+      "contract": {
+        "account": "greed-policy-8a07c217.testnet",
+        "codeHash": "44XiT4dS4JYGCfa3Gb3axZKuD6XckA4VMYNyaKzfWMKN",
+        "codeVerified": true,
+        "blockHeight": 274684142,
+        "blockHash": "5GFphumS8j9hFNPtVzMrpy8KwM4nBHDKwtj1KzoSfF4z",
+        "policy": {
+          "schemaVersion": 1,
+          "purpose": "synthetic-policy-proof",
+          "owner": "greed-policy-8a07c217.testnet",
+          "guardian": "guardian.greed-policy-8a07c217.testnet",
+          "syntheticBalanceMicros": "100000000000",
+          "allowedVenues": [
+            "lending",
+            "staking",
+            "hold"
+          ],
+          "policy": {
+            "id": "mandate-genesis",
+            "maxSpendMicros": "25000000000",
+            "maxExposureBps": 3500,
+            "minReserveBps": 2500,
+            "paused": false
+          },
+          "recordCount": "3"
+        },
+        "recordId": "accepted",
+        "record": {
+          "proposalId": "proof-1c8229fc-f058-4e65-8aa5-edba3b49ca23",
+          "allowed": true,
+          "checks": [
+            {
+              "rule": "Contract & action allowlist",
+              "passed": true
+            },
+            {
+              "rule": "Transaction ceiling",
+              "passed": true
+            },
+            {
+              "rule": "Exposure limit",
+              "passed": true
+            },
+            {
+              "rule": "Reserve floor",
+              "passed": true
+            },
+            {
+              "rule": "Current mandate & fresh data",
+              "passed": true
+            },
+            {
+              "rule": "Proposal expiry",
+              "passed": true
+            },
+            {
+              "rule": "Replay protection",
+              "passed": true
+            },
+            {
+              "rule": "Emergency pause",
+              "passed": true
+            }
+          ],
+          "recordedAt": "1792920508264",
+          "policy": {
+            "id": "mandate-genesis",
+            "maxSpendMicros": "25000000000",
+            "maxExposureBps": 3500,
+            "minReserveBps": 2500,
+            "paused": false
+          },
+          "inputHash": "dc8b6d818f0af95e929b0c7d4a04aa0f927473c338629f42fb0c1e350d8dfed2",
+          "environment": "synthetic-policy-proof"
+        }
+      },
+      "note": "NEAR policy evidence uses synthetic inputs. Treasury settlement and holder governance remain simulated."
+    },
+    {
+      "connected": true,
+      "chainId": "testnet",
+      "blockHeight": 274684139,
+      "blockHash": "o3J8HPCrWTZCMU7rQQLzp2BzRDN2AvYt68StYK4DByH",
+      "observedAt": "2026-10-25T09:54:12.348Z",
+      "contract": {
+        "account": "greed-policy-8a07c217.testnet",
+        "codeHash": "44XiT4dS4JYGCfa3Gb3axZKuD6XckA4VMYNyaKzfWMKN",
+        "codeVerified": true,
+        "blockHeight": 274684143,
+        "blockHash": "CybskMj6LiRPniiwtTSjHcKYyWFdLLrHp5v3Q6qvDyAW",
+        "policy": {
+          "schemaVersion": 1,
+          "purpose": "synthetic-policy-proof",
+          "owner": "greed-policy-8a07c217.testnet",
+          "guardian": "guardian.greed-policy-8a07c217.testnet",
+          "syntheticBalanceMicros": "100000000000",
+          "allowedVenues": [
+            "lending",
+            "staking",
+            "hold"
+          ],
+          "policy": {
+            "id": "mandate-genesis",
+            "maxSpendMicros": "25000000000",
+            "maxExposureBps": 3500,
+            "minReserveBps": 2500,
+            "paused": false
+          },
+          "recordCount": "3"
+        },
+        "recordId": "blocked",
+        "record": {
+          "proposalId": "proof-1c8229fc-f058-4e65-8aa5-edba3b49ca23-blocked",
+          "allowed": false,
+          "checks": [
+            {
+              "rule": "Contract & action allowlist",
+              "passed": false
+            },
+            {
+              "rule": "Transaction ceiling",
+              "passed": true
+            },
+            {
+              "rule": "Exposure limit",
+              "passed": true
+            },
+            {
+              "rule": "Reserve floor",
+              "passed": true
+            },
+            {
+              "rule": "Current mandate & fresh data",
+              "passed": true
+            },
+            {
+              "rule": "Proposal expiry",
+              "passed": true
+            },
+            {
+              "rule": "Replay protection",
+              "passed": true
+            },
+            {
+              "rule": "Emergency pause",
+              "passed": true
+            }
+          ],
+          "recordedAt": "1792920524039",
+          "policy": {
+            "id": "mandate-genesis",
+            "maxSpendMicros": "25000000000",
+            "maxExposureBps": 3500,
+            "minReserveBps": 2500,
+            "paused": false
+          },
+          "inputHash": "24e1861476008f7c64b12e80e5210b0b48ef76cb30d7999909eacbbd762894d3",
+          "environment": "synthetic-policy-proof"
+        }
+      },
+      "note": "NEAR policy evidence uses synthetic inputs. Treasury settlement and holder governance remain simulated."
+    },
+    {
+      "connected": true,
+      "chainId": "testnet",
+      "blockHeight": 274684139,
+      "blockHash": "o3J8HPCrWTZCMU7rQQLzp2BzRDN2AvYt68StYK4DByH",
+      "observedAt": "2026-10-25T09:54:12.494Z",
+      "contract": {
+        "account": "greed-policy-8a07c217.testnet",
+        "codeHash": "44XiT4dS4JYGCfa3Gb3axZKuD6XckA4VMYNyaKzfWMKN",
+        "codeVerified": true,
+        "blockHeight": 274684143,
+        "blockHash": "CybskMj6LiRPniiwtTSjHcKYyWFdLLrHp5v3Q6qvDyAW",
+        "policy": {
+          "schemaVersion": 1,
+          "purpose": "synthetic-policy-proof",
+          "owner": "greed-policy-8a07c217.testnet",
+          "guardian": "guardian.greed-policy-8a07c217.testnet",
+          "syntheticBalanceMicros": "100000000000",
+          "allowedVenues": [
+            "lending",
+            "staking",
+            "hold"
+          ],
+          "policy": {
+            "id": "mandate-genesis",
+            "maxSpendMicros": "25000000000",
+            "maxExposureBps": 3500,
+            "minReserveBps": 2500,
+            "paused": false
+          },
+          "recordCount": "3"
+        },
+        "recordId": "replay",
+        "record": {
+          "proposalId": "proof-1c8229fc-f058-4e65-8aa5-edba3b49ca23",
+          "allowed": false,
+          "checks": [
+            {
+              "rule": "Contract & action allowlist",
+              "passed": true
+            },
+            {
+              "rule": "Transaction ceiling",
+              "passed": true
+            },
+            {
+              "rule": "Exposure limit",
+              "passed": true
+            },
+            {
+              "rule": "Reserve floor",
+              "passed": true
+            },
+            {
+              "rule": "Current mandate & fresh data",
+              "passed": true
+            },
+            {
+              "rule": "Proposal expiry",
+              "passed": true
+            },
+            {
+              "rule": "Replay protection",
+              "passed": false
+            },
+            {
+              "rule": "Emergency pause",
+              "passed": true
+            }
+          ],
+          "recordedAt": "1792920539855",
+          "policy": {
+            "id": "mandate-genesis",
+            "maxSpendMicros": "25000000000",
+            "maxExposureBps": 3500,
+            "minReserveBps": 2500,
+            "paused": false
+          },
+          "inputHash": "e87b929b6c7bb86f66f4e9c423b60c766ca83c7dac810ae3e5defca0c49509be",
+          "environment": "synthetic-policy-proof"
+        }
+      },
+      "note": "NEAR policy evidence uses synthetic inputs. Treasury settlement and holder governance remain simulated."
+    }
+  ],
+  "credentialPath": ".near/proof-credentials.json",
+  "transactions": [
+    {
+      "step": "deploy-and-initialize",
+      "hash": "3nq7wmaBjnX5dzigEsAnWfSYtvYLJHCqFms6qg9TwN4o"
+    },
+    {
+      "step": "create-isolated-guardian",
+      "hash": "8sWbGHtxX8E14ZFWfVZqFmtVbHAhudzv7H6oqifZtRiF"
+    },
+    {
+      "step": "accepted",
+      "hash": "349qdjXWPyKWEk3N2BGvWNAMCCNAatzs2ErajrwrbiaQ"
+    },
+    {
+      "step": "blocked",
+      "hash": "3ry9s1AcrUwH6kfthJswNTezq2HA2DdAcMQwiY5vem23"
+    },
+    {
+      "step": "replay",
+      "hash": "CfVftMvU23mRbFL3ZQBmxi54j6ccp6NrNBzTSMkVS1ap"
+    }
+  ],
+  "completed": true
+}

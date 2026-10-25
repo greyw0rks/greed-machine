@@ -1,0 +1,15 @@
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { mkdtempSync } from "node:fs";
+import { join } from "node:path";
+import { tmpdir } from "node:os";
+import { randomUUID } from "node:crypto";
+process.env.GREED_DB_PATH=join(mkdtempSync(join(tmpdir(),"greed-tests-")),"test.sqlite");
+import { createGovernance, currentBalance, dashboard, executeGovernance, finalizeGovernance, getMeta, governanceProposals, saveRun, setPause, verifyAudit, vote } from "../src/lib/database";
+import { evaluateScenario } from "../src/lib/agents";
+import { GENESIS_MANDATE, INITIAL_BALANCE, SCENARIOS } from "../src/lib/scenarios";
+import { makeSession, parseSession } from "../src/lib/auth";
+test("durable run is atomic, idempotent and tied to a reconciled audit trail",async()=>{const key=randomUUID(),run=await evaluateScenario(SCENARIOS[0],GENESIS_MANDATE,INITIAL_BALANCE);saveRun(run,key,INITIAL_BALANCE);assert.equal(currentBalance(),INITIAL_BALANCE+run.receipt.netMicros);saveRun(run,key,INITIAL_BALANCE);assert.equal(dashboard(null).runs.length,1);assert.equal(verifyAudit(),true);const tampered=structuredClone(dashboard(null).events);tampered[0].detail="tampered";assert.equal(verifyAudit(tampered),false);});
+test("governance uses fixed snapshot weights, one ballot per holder and enforced timelock",()=>{const now=Date.now(),p=createGovernance("Lower exposure","Preserve more capital during volatile periods.",{maxSpendMicros:15000e6,maxExposureBps:2000,minReserveBps:4000},"ada",now);vote(p.id,"ada","for",now+1);assert.throws(()=>vote(p.id,"ada","for",now+2));vote(p.id,"kai","for",now+2);const recorded=governanceProposals()[0];assert.equal(Object.getPrototypeOf(recorded.votes[0]),Object.prototype);assert.throws(()=>finalizeGovernance(p.id,now+3));finalizeGovernance(p.id,now+20001);assert.equal(governanceProposals()[0].status,"timelock");assert.throws(()=>executeGovernance(p.id,now+20002));executeGovernance(p.id,now+30002);assert.equal(getMeta<{maxExposureBps:number}>("mandate").maxExposureBps,2000);assert.equal(verifyAudit(),true);});
+test("guardian privilege does not extend to other snapshot roles",()=>{assert.throws(()=>setPause(true,"ada"));setPause(true,"noa");assert.equal(dashboard(null).mandate.paused,true);setPause(false,"noa");});
+test("demo session signatures reject tampered holder and expiry claims",()=>{const token=makeSession("ada");assert.equal(parseSession(token),"ada");assert.equal(parseSession(token.replace("ada:","kai:")),null);assert.equal(parseSession("ada:0:abcd"),null);});

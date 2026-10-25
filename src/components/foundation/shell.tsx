@@ -1,0 +1,17 @@
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { createContext, useCallback, useContext, useEffect, useRef, useState } from "react";
+import { ArrowUpRight, RefreshCw, ShieldCheck } from "lucide-react";
+import { Brand } from "./brand";
+import type { FoundationData } from "@/lib/foundation/types";
+const Context=createContext<{data:FoundationData;refresh:()=>Promise<void>;act:(action:unknown,token?:string)=>Promise<void>;busy:boolean;error:string|null}|null>(null);
+export function useFoundation(){const value=useContext(Context);if(!value)throw new Error("Foundation context missing");return value;}
+const links=[["/app","Activity"],["/app/swarm","The swarm"],["/app/risk","Security"],["/app/distributions","Distributions"],["/app/audit","Audit trail"],["/testnet","NEAR proof"]];
+export function FoundationShell({initial,children}:{initial:FoundationData;children:React.ReactNode}){
+  const [data,setData]=useState(initial),[error,setError]=useState<string|null>(null),[busy,setBusy]=useState(false),pending=useRef(false),path=usePathname();
+  const refresh=useCallback(async()=>{if(pending.current)return;try{const response=await fetch("/api/foundation",{cache:"no-store"});if(!response.ok)throw new Error("Activity could not refresh. Showing the last received records.");setData(await response.json());setError(null);}catch(e){setError(e instanceof Error?e.message:"Activity unavailable. Try refreshing.");}},[]);
+  useEffect(()=>{const id=setInterval(()=>{if(!document.hidden)void refresh();},5000);return()=>clearInterval(id);},[refresh]);
+  async function act(action:unknown,token?:string){if(pending.current)return;pending.current=true;setBusy(true);setError(null);try{const response=await fetch("/api/foundation",{method:"POST",headers:{"Content-Type":"application/json",...(token?{Authorization:`Bearer ${token}`}:{})},body:JSON.stringify(action)});const body=await response.json();if(body.foundation)setData(body.foundation);if(!response.ok)throw new Error(body.error||"Action failed. Try again.");setData(body);}catch(e){setError(e instanceof Error?e.message:"Action failed. Try again.");throw e;}finally{pending.current=false;setBusy(false);}}
+  return <Context.Provider value={{data,refresh,act,busy,error}}><div className="foundation-app"><header className="app-header"><Brand/><span className="public-label">The public record</span><Link href="/">About the machine <ArrowUpRight size={15}/></Link></header><div className="app-nav-row"><nav aria-label="Public record">{links.map(([href,title])=><Link href={href} key={href} aria-current={path===href?"page":undefined}>{title}</Link>)}</nav><span className="environment-label"><span className="status-bead"/>Simulation</span></div><main id="main" className="app-content">{error&&<div className="notice error-notice" role="alert"><span>{error}</span><button onClick={()=>void refresh()} className="gm-text-link"><RefreshCw size={15}/>Refresh</button></div>}{!data.accountingComplete&&<div className="notice" role="status">Provider accounting pending · New capital commitments and payouts are blocked until costs are reconciled.</div>}{children}</main><footer className="app-footer"><span><ShieldCheck size={15}/>Synthetic USDC · No live trades or transfers</span><div><Link href="/app/governance">Core governance</Link><Link href="/app/operator">Operator</Link></div></footer></div></Context.Provider>;
+}

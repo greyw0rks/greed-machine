@@ -1,0 +1,39 @@
+{
+  "environment": "local-near-sandbox",
+  "networkIdentityAdapter": "status only; real compiled token/account queries",
+  "wasmSha256": "346eb4cff780ad8bdebf40016c424ae4de054081c7833307d2a17ff9cb5d482d",
+  "passed": true,
+  "reports": [
+    {
+      "name": "compiled token initializes once with a fixed million-token supply",
+      "passed": true
+    },
+    {
+      "name": "real account keys and compiled NEP-141 views authenticate NEP-413 signers",
+      "passed": true
+    },
+    {
+      "name": "transfers after the snapshot cannot change proposal voting weight",
+      "passed": true
+    },
+    {
+      "name": "compiled-token votes satisfy quorum and the full local mandate timelock",
+      "passed": true
+    },
+    {
+      "name": "fixture has no post-initialization mint entrypoint",
+      "passed": true
+    }
+  ],
+  "snapshot": {
+    "environment": "testnet",
+    "tokenAccount": "token.testnet",
+    "codeHash": "4Xg7MLo6sgEEQ64kGcfnWiQYtSpXdQonSEyqr6kJ3LxC",
+    "blockHash": "3DWerKc4LyA6xJ3BDNaXXBL2jCZS9zC2ksYvScUPcZgr",
+    "blockHeight": 35,
+    "timestamp": 1792932444275,
+    "totalSupply": "1000000",
+    "decimals": 0,
+    "symbol": "GREED"
+  }
+}

@@ -1,0 +1,102 @@
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { mkdtempSync } from "node:fs";
+import { join } from "node:path";
+import { tmpdir } from "node:os";
+process.env.GREED_DB_PATH=join(mkdtempSync(join(tmpdir(),"greed-foundation-")),"foundation.sqlite");
+import { allocateEntitlements, profitSplit } from "../src/lib/foundation/distributions";
+import { configureFoundation, foundationData, freezeDistribution, pauseFoundation, payDistributions, requestCycle, tickFoundation } from "../src/lib/foundation/store";
+import { db } from "../src/lib/database";
+async function complete(id:string){requestCycle(id);for(let i=0;i<4;i++)await tickFoundation(true);return foundationData();}
+test("largest remainder allocation conserves every microdollar and is order independent",()=>{
+  const recipients=[{id:"c",name:"C",weight:"1000000000000000000000000000000000000"},{id:"b",name:"B",weight:"1000000000000000000000000000000000000"},{id:"a",name:"A",weight:"1000000000000000000000000000000000000"}];
+  for(const pool of [0,1,2,101,100000003]){const rows=allocateEntitlements(pool,recipients);assert.equal(rows.reduce((n,r)=>n+r.amountMicros,0),pool);assert.deepEqual(rows,allocateEntitlements(pool,recipients.toReversed()));}
+  assert.equal(allocateEntitlements(1,recipients)[0].amountMicros,1);
+  assert.throws(()=>allocateEntitlements(1,[recipients[0],recipients[0]]));
+  assert.throws(()=>allocateEntitlements(1.2,recipients));
+});
+test("profit waterfall recovers previous losses before allocating new earnings",()=>{
+  assert.equal(profitSplit(-100,0,6500).profitMicros,0);
+  assert.equal(profitSplit(50,100,6500).profitMicros,0);
+  assert.deepEqual(profitSplit(201,100,6500),{profitMicros:101,holderMicros:65,retainedMicros:36});
+  assert.throws(()=>profitSplit(100,0,7100));
+});
+test("cycles, refusal, snapshots, retry, pause, leases and reconciliation persist together",async()=>{
+  let data=await complete("steady-yield");
+  assert.equal(data.cycles[0].phase,"settled");assert.equal(data.reconciled,true);assert.equal(data.auditValid,true);assert.equal(data.distributions.length,1);
+  const period=structuredClone(data.distributions[0]);
+  assert.equal(period.holderMicros+period.retainedMicros,period.profitMicros);
+  assert.equal(data.availableMicros,data.engine.cashMicros-data.pendingMicros);
+  configureFoundation({blockedRecipients:["fixture.ada"]});payDistributions();
+  data=foundationData();assert.equal(data.distributions[0].entitlements.filter(e=>e.status==="failed").length,1);assert.ok(data.pendingMicros>0);
+  const once=data.engine.distributedMicros;payDistributions();assert.equal(foundationData().engine.distributedMicros,once);
+  configureFoundation({blockedRecipients:[],recipients:[{id:"new",name:"New fixture",weight:"1"}],holderBps:6000});
+  assert.deepEqual(foundationData().distributions[0].snapshot,period.snapshot);
+  pauseFoundation(true);assert.equal(payDistributions(),0);assert.throws(()=>requestCycle("steady-yield"));
+  pauseFoundation(false);payDistributions();data=foundationData();assert.equal(data.pendingMicros,0);assert.equal(data.engine.distributedMicros,period.holderMicros);assert.equal(data.distributions[0].status,"complete");
+  const receipts=data.distributions[0].entitlements.map(e=>e.receipt);payDistributions();assert.deepEqual(foundationData().distributions[0].entitlements.map(e=>e.receipt),receipts);
+  const watermark=data.engine.profitWatermarkMicros;
+  data=await complete("rate-reversal");assert.ok(data.cycles[0].netMicros!<0);assert.equal(data.distributions.length,1);assert.equal(data.engine.profitWatermarkMicros,watermark);
+  data=await complete("stale-oracle");assert.equal(data.cycles[0].phase,"blocked");assert.equal(data.cycles[0].evaluation!.receipt!.capitalMicros,0);assert.ok(data.cycles[0].security!.checks.some(c=>!c.passed));
+  requestCycle("steady-yield");assert.throws(()=>requestCycle("steady-yield"));
+  const concurrent=await Promise.all([tickFoundation(true),tickFoundation(true)]);assert.equal(concurrent.filter(r=>r.worked).length,1);
+  await tickFoundation(true);await tickFoundation(true);assert.equal(foundationData().cycles[0].phase,"funded");
+  pauseFoundation(true);await tickFoundation(true);data=foundationData();assert.equal(data.cycles[0].phase,"settled");assert.equal(data.engine.reservedMicros,0);assert.equal(data.reconciled,true);
+  assert.throws(()=>freezeDistribution());pauseFoundation(false);freezeDistribution();payDistributions();
+  requestCycle("steady-yield");await tickFoundation(true);await tickFoundation(true);
+  const expired=foundationData().cycles[0];expired.evaluation!.selected.expiresAt=0;
+  db().prepare("UPDATE foundation_cycles SET payload=? WHERE id=?").run(JSON.stringify(expired),expired.id);
+  await tickFoundation(true);data=foundationData();assert.equal(data.cycles[0].phase,"blocked");assert.equal(data.reconciled,true);assert.equal(data.auditValid,true);
+});
+test("funding rejects a proposal ID already used by a settled position",async()=>{
+  const executed=foundationData().cycles.find(c=>c.evaluation?.receipt?.capitalMicros)!;
+  requestCycle("steady-yield");await tickFoundation(true);await tickFoundation(true);
+  const candidate=foundationData().cycles[0];candidate.evaluation!.selected.id=executed.evaluation!.selected.id;
+  db().prepare("UPDATE foundation_cycles SET payload=? WHERE id=?").run(JSON.stringify(candidate),candidate.id);
+  await tickFoundation(true);
+  const result=foundationData(),cycle=result.cycles[0];
+  assert.equal(cycle.phase,"blocked");assert.equal(cycle.evaluation!.receipt!.capitalMicros,0);
+  assert.ok(cycle.security!.checks.some(c=>!c.passed&&c.evidence.includes("Replay protection")));
+  assert.equal(result.reconciled,true);assert.equal(result.auditValid,true);
+});
+test("losses cannot shrink the fixed liquid reserve at funding time",async()=>{
+  const data=foundationData(),state={...data.engine,cashMicros:25_010e6};
+  state.totalNetMicros=state.cashMicros+state.reservedMicros-state.initialMicros+state.distributedMicros;
+  db().prepare("UPDATE foundation_meta SET payload=? WHERE key='state'").run(JSON.stringify(state));
+  const result=await complete("steady-yield"),cycle=result.cycles[0];
+  assert.equal(cycle.phase,"blocked");
+  assert.equal(cycle.security!.approved,false);
+  assert.ok(cycle.security!.checks.some(c=>!c.passed&&c.evidence.includes("Fixed liquid reserve")));
+  assert.equal(cycle.evaluation!.receipt!.capitalMicros,0);
+  assert.ok(result.availableMicros>=25_000e6);
+  assert.equal(result.reconciled,true);assert.equal(result.auditValid,true);
+});
+test("failed receivers cannot starve later batches and all unpaid amounts stay protected",()=>{
+  payDistributions();
+  const recipients=Array.from({length:30},(_,i)=>({id:`batch.${String(i).padStart(2,"0")}`,name:`Holder ${i}`,weight:"1"}));
+  configureFoundation({recipients,blockedRecipients:recipients.slice(0,25).map(r=>r.id)});
+  const state=foundationData().engine;
+  state.totalNetMicros=state.profitWatermarkMicros+100_000e6;
+  state.cashMicros=state.initialMicros+state.totalNetMicros-state.distributedMicros;
+  db().prepare("UPDATE foundation_meta SET payload=? WHERE key='state'").run(JSON.stringify(state));
+  freezeDistribution();
+  const period=foundationData().distributions[0];
+  payDistributions(25);assert.equal(foundationData().engine.distributedMicros,state.distributedMicros);
+  payDistributions(25);
+  let result=foundationData(),updated=result.distributions.find(p=>p.id===period.id)!;
+  assert.equal(updated.entitlements.filter(e=>e.status==="paid").length,5);
+  assert.equal(result.pendingMicros,updated.entitlements.filter(e=>e.status!=="paid").reduce((n,e)=>n+e.amountMicros,0));
+  assert.ok(result.events.some(e=>e.kind==="payout-failed"));
+  // Individual payouts must not consume cash backing the other unpaid holders.
+  const depleted={...result.engine,cashMicros:25_000e6+result.pendingMicros-1};
+  depleted.totalNetMicros=depleted.cashMicros-depleted.initialMicros+depleted.distributedMicros;
+  db().prepare("UPDATE foundation_meta SET payload=? WHERE key='state'").run(JSON.stringify(depleted));
+  configureFoundation({blockedRecipients:[]});payDistributions();
+  result=foundationData();assert.equal(result.engine.distributedMicros,depleted.distributedMicros);
+  assert.equal(result.pendingMicros,updated.entitlements.filter(e=>e.status!=="paid").reduce((n,e)=>n+e.amountMicros,0));
+  depleted.cashMicros++;depleted.totalNetMicros++;
+  db().prepare("UPDATE foundation_meta SET payload=? WHERE key='state'").run(JSON.stringify(depleted));
+  payDistributions();result=foundationData();updated=result.distributions.find(p=>p.id===period.id)!;
+  assert.equal(updated.status,"complete");assert.equal(result.pendingMicros,0);
+  assert.equal(result.engine.cashMicros,25_000e6);assert.equal(result.reconciled,true);assert.equal(result.auditValid,true);
+});
