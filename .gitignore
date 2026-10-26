@@ -11,3 +11,6 @@ contracts/**/target/
 .near/
 .atlas/
 *.tsbuildinfo
+demo-video/.hyperframes/
+demo-video/assets/audio/voice/raw/
+demo-video/renders/

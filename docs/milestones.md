@@ -80,3 +80,7 @@ gUSD is unbacked, the vault result is sponsor-funded, and the snapshot is operat
 5. Add the selected launchpad purchase destination and reuse wallet governance only for core-policy changes.
 
 The earlier next step of prioritizing on-chain governance updates is deferred. Existing contracts, wallet verification and tests remain useful foundations. External DeFi trades, routed launch/trading-fee income and production stablecoin profit payouts remain unfinished.
+
+## Completed: public business settlement — October 25, 2026
+
+The confirmed plan executed on public NEAR testnet. Eleven rehearsal checks and an independent finalized code/ledger/balance observation pass: 1,004.55 gUSD cash, 8.45 gUSD holder payments and zero unpaid liabilities. Carol retained her entitlement after a failed transfer and received 2.9575 gUSD on retry. The original guardian pause was recovered under its original hash after funding native gas from the setup buffer; no replacement signature, payment or run ID was created. Evidence: [public rehearsal](../evidence/business-testnet.json), [finalized observation](../evidence/business-testnet-observation.json). Unbacked tokens and controlled returns remain fixtures.

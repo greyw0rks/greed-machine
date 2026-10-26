@@ -18,7 +18,9 @@ export function tokenEvents(outcomes:Outcome[],accountId:string):TokenEvent[]{
 export async function rehearseBusiness(ctx:RehearsalContext){
   const {provider,journal,accounts:a,wasms}=ctx,transactions:Outcome[]=[],reports:{name:string;passed:boolean}[]=[];
   const view=async<T>(account:string,method:string,args:Record<string,unknown>={}):Promise<T>=>provider.callFunction({contractId:account,method,args,blockQuery:{finality:"final"}}) as Promise<T>;
-  const write=async(step:string,account:Account,receiver:string,method:string,args:Record<string,unknown>,deposit=0n,gas=180_000_000_000_000n)=>{const tx=await journal.send(step,account,receiver,[actions.functionCall(method,args,gas,deposit)]);transactions.push(tx);return tx;};
+  // Plain NEP-141 transfers need no cross-contract callback budget. Keep the
+  // existing 180 Tgas request for all journaled treasury actions on recovery.
+  const write=async(step:string,account:Account,receiver:string,method:string,args:Record<string,unknown>,deposit=0n,gas=method==="ft_transfer"?30_000_000_000_000n:180_000_000_000_000n)=>{const tx=await journal.send(step,account,receiver,[actions.functionCall(method,args,gas,deposit)]);transactions.push(tx);return tx;};
   const success=(tx:Outcome)=>{assert.ok(typeof tx.status==="object"&&"SuccessValue" in tx.status,"Expected finalized successful transaction");return getTransactionLastResult(tx);};
   const denied=async(name:string,fn:()=>Promise<Outcome>)=>{const tx=await fn();assert.ok(typeof tx.status==="object"&&"Failure" in tx.status,`Expected chain refusal: ${name}`);reports.push({name,passed:true});ctx.progress(`Verified: ${name}`);};
   const check=(name:string)=>{reports.push({name,passed:true});ctx.progress(`Verified: ${name}`);};

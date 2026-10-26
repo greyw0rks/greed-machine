@@ -1,6 +1,6 @@
-# Public NEAR rehearsal plan — awaiting confirmation
+# Public NEAR rehearsal plan — completed
 
-Prepared October 25, 2026 with `npm run business:plan`. Local compiled-contract verification passed 25 checks. This public rehearsal has not been signed or deployed. The dedicated root account was absent at the finalized testnet readiness check.
+Prepared October 25, 2026 with `npm run business:plan`; the user confirmed both public steps. Completed on public testnet at 2026-10-25T22:47:12Z. The saved public rehearsal passed 11 checks and its finalized builds, ledger and recipient balances independently reconcile. Local compiled-contract verification separately passed 25 checks. See [public evidence](../evidence/business-testnet.json) and [finalized observation](../evidence/business-testnet-observation.json).
 
 ## Accounts and builds
 
@@ -51,4 +51,6 @@ Keep the original transaction journal, decision and snapshot on interruption. Un
 
 Proposed public repository: `https://github.com/greyw0rks/greed-machine`, branch `main`. Publish the reviewed source, lockfiles, README, reproduction guides, public proof JSON and demo screenshots. Exclude `.env*` credentials, `.near/`, private signed journals, databases, `.atlas/`, `.impeccable/`, `node_modules/`, `.next/` and Rust targets. The blank `.env.example` remains included for setup.
 
-Explicit confirmation is pending for both testnet signing and creating/pushing this public repository. [The supplied hackathon rules](HACKATHON.md#never-without-the-humans-explicit-confirmation) require it. X publication and the final API payload have their own later human steps.
+The user explicitly confirmed both testnet signing and creating/pushing this public repository. X publication and the final API payload have their own later human steps under [the supplied hackathon rules](HACKATHON.md#never-without-the-humans-explicit-confirmation).
+
+Recovery used 0.13 test NEAR from the existing 0.2 setup buffer to satisfy the guardian's gas prepayment. The original pause hash `Ex4XZN1guNmZcCXEJyNr6qVtxqG6EuKMVeBEhb7Do6kX` was initially absent from RPC. A finalized unused signer nonce, unchanged treasury state and pinned code established that it had not executed; rebroadcasting the identical signed bytes returned a definite insufficient-balance rejection. After gas funding, the same bytes finalized under the same hash, without a new signature or replacement transaction. Plain holder token transfers now attach 30 Tgas; existing journaled treasury actions retain their original 180 Tgas. No demo-token amounts, recipients, run IDs or contract builds changed.

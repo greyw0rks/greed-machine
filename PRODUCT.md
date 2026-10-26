@@ -38,7 +38,7 @@ The current foundation runs scheduled simulation cycles and records synthetic US
 
 ## Brand Commitments
 
-GREED MACHINE. The current full redesign replaces graphite/lime with cobalt blue, ice white, ink and warm peach. The user chose an immersive Three.js experience and Framer Motion transitions. Brand expression belongs in the public site; financial evidence must remain legible and attributable.
+GREED MACHINE. On October 25, 2026 the user requested a replacement for the blue palette. The current palette uses warm ivory, charcoal and olive with amber accents, documented in `DESIGN.md`. The user chose an immersive Three.js experience and Framer Motion transitions. Brand expression belongs in the public site; financial evidence must remain legible and attributable.
 
 ## Evidence on Hand
 

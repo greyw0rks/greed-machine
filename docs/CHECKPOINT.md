@@ -1,4 +1,4 @@
-# Greed Machine checkpoint — October 25, 2026
+# Greed Machine checkpoint — October 26, 2026
 
 The user confirmed that eligibility is acceptable and asked to complete the NEAR hackathon requirements. Live https://nearhackathon.com/HACKATHON.md was read again: submissions open November 1 at 00:00 UTC and close November 14 at 23:59 UTC. No API submission has been attempted.
 
@@ -17,20 +17,23 @@ The user confirmed that eligibility is acceptable and asked to complete the NEAR
 
 The recorded gas-cost field was corrected to `nearGasCostYocto`; it represents token burn in yoctoNEAR. Future rehearsal exports also record gas units separately. This reporting correction does not change contract behavior or send any transaction.
 
-## Next actions awaiting explicit confirmation
+## Confirmed public completion and current work
 
-[docs/testnet-plan.md](testnet-plan.md) is the concrete public testnet and repository publication proposal. Root: `greed-biz-1584eb30.testnet`; required faucet setup balance: 8.2242 test NEAR. All child accounts, compiled hashes and exact token operations are listed there. The root was absent at the finalized readiness check; public business evidence does not yet exist.
+The user confirmed both public steps. The public business rehearsal completed October 25 at 22:47:12 UTC: all 11 checks passed. An independent finalized observation at 23:06:35 UTC reconciles pinned builds, treasury ledger, 1,004.55 gUSD cash, 8.45 gUSD holder payments and zero unpaid liabilities. Evidence is in `evidence/business-testnet.json` and `evidence/business-testnet-observation.json`. Preserve this completed run; do not deploy or pay it again.
 
-Proposed repository: `https://github.com/greyw0rks/greed-machine`, branch `main`. GitHub authentication was verified for `greyw0rks`; a read-only repository lookup returned 404. There is no Git remote or public push yet. Local credentials, signed journals and databases are ignored and excluded from frontend traces. The reviewed 139-file source snapshot is saved locally; 54 relative links were checked, with no local credential matches in the staged source. Publication remains pending.
+Guardian gas recovery used 0.13 test NEAR from the existing setup buffer. The pause finalized under its original signed hash after a definite insufficient-balance rejection and gas funding. No replacement signature or run ID was created. Plain token transfers now attach 30 Tgas; treasury actions preserve their original journaled 180 Tgas.
 
-After the user confirms both actions:
+The requested olive/ivory/charcoal/amber palette is implemented across the site, Three.js and reduced-motion fallback. The production build and 18 desktop/mobile foundation captures pass; four refreshed public business captures pass with no page errors.
 
-1. Run `npm run business:deploy` using the existing ignored dedicated credentials. Do not regenerate the plan. If faucet funding is insufficient, retain the same root account and request testnet funding for it.
-2. Run `npm run business:verify`. Require finalized code, ledger and actual holder balances to reconcile before claiming public completion.
-3. Refresh demo screenshots with `npm run business:ui`, update completion records and publish the reviewed repository to the confirmed destination.
-4. The human publishes their X demo post with screenshots/video and supplies its public URL.
-5. Collect the human-confirmed project name, lead name, email, team-size category, tracks, mainnet prize account and description. Arc/Clerk emails and testnet accounts are not assumed to be submission fields.
-6. Ask whether the team already submitted, read the contact notice verbatim and obtain agreement. Re-read live rules, validate every exact API field, generate and preserve one requestId, display the full payload and wait for explicit confirmation. Submit only during the open window. Keep personal payloads outside the repository.
+Approved repository: `https://github.com/greyw0rks/greed-machine`, branch `main`. Publication remains pending. Local credentials, signed journals and databases are ignored and excluded from frontend traces. Initial reviewed source is saved in local commit `26e4316`; public evidence, palette and demo changes must be included in the next reviewed commit.
+
+The user requested the demo file with captions and local KittenTTS 2 narration. `demo-video/` contains the selected seven-scene, 60-second landscape film, real public app captures and generation/reproduction tools. Opening and swarm takes are preserved; the other five takes are generating from the cached model and existing private voice reference. Raw takes are ignored. HyperFrames was upgraded from 0.8.200 to 0.8.201 and its composition check passed. Complete and inspect captions, narration and the MP4 before marking the video done.
+
+1. Finish the captioned Kitten2 demo. Validate the full composition, inspect decoded delivery frames and measure audio.
+2. Review and publish source, public evidence and final demo to the already-approved GitHub destination. Exclude private reference media, credentials, journals and databases.
+3. The human publishes their X demo post with screenshots/video and supplies its public URL.
+4. Collect human-confirmed project name, lead name, email, team-size category, tracks, mainnet prize account and description. Arc/Clerk emails and testnet accounts are not assumed to be submission fields.
+5. Ask whether the team already submitted, read the contact notice verbatim and obtain agreement. Re-read live rules, validate every exact API field, generate and preserve one requestId, display the full payload and wait for explicit confirmation. Submit only during the open window. Keep personal payloads outside the repository.
 
 See [submission-checklist.md](submission-checklist.md) and [demo-post-draft.md](demo-post-draft.md).
 
@@ -40,4 +43,4 @@ gUSD is unbacked, launch/fee/vault returns are sponsor fixtures, the 65/35 split
 
 Keep `.near/business-transactions.json` and its decision/snapshot files if public execution is interrupted. Preserve the exact request, original transaction bytes and hash; an unknown status stops the runner. Never replace an uncertain payment or create a new run ID to bypass it.
 
-Tests and browser captures use temporary databases and local/mock providers. The normal demo database, earlier testnet evidence and scheduler state were not changed by this work. The scheduler remains disabled. No public business signing, mainnet action, repository push, X post or submission occurred.
+Tests and browser captures use temporary databases and local/mock providers. The normal demo database, earlier testnet evidence and scheduler state were not changed by this work. The scheduler remains disabled. Public business signing is complete under the confirmed plan. No mainnet action, repository push, X post or submission has occurred at this checkpoint.

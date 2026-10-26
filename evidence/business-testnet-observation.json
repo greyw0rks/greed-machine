@@ -1,0 +1,95 @@
+{
+  "blockHash": "4mwWn4F67vQKugqCJLbUtrJJdncknr8bAwC5WQ47mLZ5",
+  "blockHeight": 274767060,
+  "observedAt": "2026-10-25T23:06:35.252Z",
+  "state": {
+    "schema_version": 1,
+    "environment": "testnet-demo-token",
+    "token": "dollar.greed-biz-1584eb30.testnet",
+    "vault": "vault.greed-biz-1584eb30.testnet",
+    "sponsor": "greed-biz-1584eb30.testnet",
+    "operator": "operator.greed-biz-1584eb30.testnet",
+    "guardian": "guardian.greed-biz-1584eb30.testnet",
+    "expense_receiver": "provider.greed-biz-1584eb30.testnet",
+    "roster": [
+      "alice.greed-biz-1584eb30.testnet",
+      "bob.greed-biz-1584eb30.testnet",
+      "carol.greed-biz-1584eb30.testnet"
+    ],
+    "cash": "1004550000",
+    "principal": "1000000000",
+    "reserved": "0",
+    "net": "13000000",
+    "watermark": "13000000",
+    "paid": "8450000",
+    "liabilities": "0",
+    "expense_pending": "0",
+    "expense_budget_used": "0",
+    "expense_budget": "10000000",
+    "reserve_floor": "250000000",
+    "max_spend": "100000000",
+    "holder_bps": 6500,
+    "cadence_ns": "60000000000",
+    "next_distribution_ns": "1792968390562283315",
+    "paused": false,
+    "active": null,
+    "period_count": 1
+  },
+  "period": {
+    "id": 0,
+    "snapshot_hash": "928eca3f7b7db14f7694c26c7899ecfca65ba9c117def5cfe214b92d07d4b608",
+    "holders": [
+      {
+        "account_id": "alice.greed-biz-1584eb30.testnet",
+        "weight": "150000"
+      },
+      {
+        "account_id": "bob.greed-biz-1584eb30.testnet",
+        "weight": "500000"
+      },
+      {
+        "account_id": "carol.greed-biz-1584eb30.testnet",
+        "weight": "350000"
+      }
+    ],
+    "profit": "13000000",
+    "holder_amount": "8450000",
+    "retained": "4550000",
+    "entitlements": [
+      {
+        "account_id": "alice.greed-biz-1584eb30.testnet",
+        "amount": "1267500",
+        "status": "PAID",
+        "attempts": 1
+      },
+      {
+        "account_id": "bob.greed-biz-1584eb30.testnet",
+        "amount": "4225000",
+        "status": "PAID",
+        "attempts": 1
+      },
+      {
+        "account_id": "carol.greed-biz-1584eb30.testnet",
+        "amount": "2957500",
+        "status": "PAID",
+        "attempts": 2
+      }
+    ]
+  },
+  "treasuryTokenBalance": "1004550000",
+  "recipientBalances": [
+    {
+      "accountId": "alice.greed-biz-1584eb30.testnet",
+      "amount": "1267500"
+    },
+    {
+      "accountId": "bob.greed-biz-1584eb30.testnet",
+      "amount": "4225000"
+    },
+    {
+      "accountId": "carol.greed-biz-1584eb30.testnet",
+      "amount": "2957500"
+    }
+  ],
+  "reconciled": true
+}

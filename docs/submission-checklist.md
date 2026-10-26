@@ -5,10 +5,12 @@ Rules source: [live HACKATHON.md](https://nearhackathon.com/HACKATHON.md), fetch
 Development/submission window: November 1, 2026 at 00:00 UTC through November 14 at 23:59 UTC. The deadline is November 15 at 00:59 Africa/Lagos. There is no preliminary signup and there is one submission per team.
 
 - [x] Complete and verify the compiled business-cycle rehearsal: 25 Sandbox checks, 54 application tests, TypeScript and production build passed October 25.
-- [ ] Obtain explicit confirmation of the exact public testnet transaction plan, then run and independently verify it.
+- [x] User confirmed both public steps; completed the testnet plan and independently verified finalized builds, ledger and recipient balances. Evidence: `evidence/business-testnet.json` and `evidence/business-testnet-observation.json`.
 - [x] Review README judge steps and evidence classifications; document Rust prerequisites and track recommendations.
-- [ ] Obtain explicit confirmation to publish the reviewed repository; publish it before the deadline.
-- [x] Prepare desktop/mobile screenshots and a single-post demo draft. Browser checks passed with no page errors; refresh media after the public rehearsal.
+- [x] Obtain explicit confirmation to publish the reviewed repository.
+- [ ] Publish the reviewed repository before the deadline.
+- [x] Prepare desktop/mobile screenshots and a single-post demo draft. Refreshed the public rehearsal captures; four desktop/mobile checks passed with no page errors.
+- [ ] Finish the 60-second captioned demo with local KittenTTS 2 narration.
 - [ ] Human publishes the X demo post, explicitly saying built at NEAR HACKATHON, with media attached; retain its public URL.
 - [ ] Human provides/confirms project name, lead name, contact email, exact team-size category and track selections.
 - [ ] Human supplies their own mainnet NEAR prize-payout account; do not substitute a testnet proof account.
