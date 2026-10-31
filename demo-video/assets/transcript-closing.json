@@ -1,0 +1,78 @@
+{
+  "engine": "openai/whisper-base (local cache)",
+  "modelRevision": "e37978b90ca9030d5170a5c07aadb050351a65bb",
+  "words": [
+    {
+      "line": "closing",
+      "text": "Demotocons,",
+      "start": 54.0,
+      "end": 55.1
+    },
+    {
+      "line": "closing",
+      "text": "control",
+      "start": 55.1,
+      "end": 55.32
+    },
+    {
+      "line": "closing",
+      "text": "returns,",
+      "start": 55.32,
+      "end": 56.22
+    },
+    {
+      "line": "closing",
+      "text": "inspect",
+      "start": 56.22,
+      "end": 56.5
+    },
+    {
+      "line": "closing",
+      "text": "the",
+      "start": 56.5,
+      "end": 56.78
+    },
+    {
+      "line": "closing",
+      "text": "proof",
+      "start": 56.78,
+      "end": 56.9
+    },
+    {
+      "line": "closing",
+      "text": "and",
+      "start": 56.9,
+      "end": 57.18
+    },
+    {
+      "line": "closing",
+      "text": "code,",
+      "start": 57.18,
+      "end": 58.0
+    },
+    {
+      "line": "closing",
+      "text": "built",
+      "start": 58.0,
+      "end": 58.18
+    },
+    {
+      "line": "closing",
+      "text": "at",
+      "start": 58.18,
+      "end": 58.6
+    },
+    {
+      "line": "closing",
+      "text": "Nier",
+      "start": 58.6,
+      "end": 58.84
+    },
+    {
+      "line": "closing",
+      "text": "-Hakatan.",
+      "start": 58.84,
+      "end": 59.56
+    }
+  ]
+}

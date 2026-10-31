@@ -1,0 +1,642 @@
+{
+  "engine": "openai/whisper-medium.en (local cache)",
+  "modelRevision": "2e98eb6279edf5095af0c8dedb36bdec0acd172b",
+  "words": [
+    {
+      "line": "opening",
+      "text": "Greed",
+      "start": 0.4,
+      "end": 0.92
+    },
+    {
+      "line": "opening",
+      "text": "Machine",
+      "start": 0.92,
+      "end": 1.24
+    },
+    {
+      "line": "opening",
+      "text": "is",
+      "start": 1.24,
+      "end": 2.02
+    },
+    {
+      "line": "opening",
+      "text": "a",
+      "start": 2.02,
+      "end": 2.28
+    },
+    {
+      "line": "opening",
+      "text": "treasury",
+      "start": 2.28,
+      "end": 2.52
+    },
+    {
+      "line": "opening",
+      "text": "business",
+      "start": 2.52,
+      "end": 2.98
+    },
+    {
+      "line": "opening",
+      "text": "you",
+      "start": 2.98,
+      "end": 3.38
+    },
+    {
+      "line": "opening",
+      "text": "can",
+      "start": 3.38,
+      "end": 3.64
+    },
+    {
+      "line": "opening",
+      "text": "inspect,",
+      "start": 3.64,
+      "end": 4.7
+    },
+    {
+      "line": "opening",
+      "text": "buy,",
+      "start": 4.7,
+      "end": 5.26
+    },
+    {
+      "line": "opening",
+      "text": "hold",
+      "start": 5.26,
+      "end": 5.44
+    },
+    {
+      "line": "opening",
+      "text": "and",
+      "start": 5.44,
+      "end": 5.74
+    },
+    {
+      "line": "opening",
+      "text": "share",
+      "start": 5.74,
+      "end": 6.1
+    },
+    {
+      "line": "opening",
+      "text": "eligible",
+      "start": 6.1,
+      "end": 6.86
+    },
+    {
+      "line": "opening",
+      "text": "realized",
+      "start": 6.86,
+      "end": 7.56
+    },
+    {
+      "line": "opening",
+      "text": "profit.",
+      "start": 7.92,
+      "end": 8.18
+    },
+    {
+      "line": "swarm",
+      "text": "Scouts",
+      "start": 9.1,
+      "end": 9.4
+    },
+    {
+      "line": "swarm",
+      "text": "propose",
+      "start": 9.4,
+      "end": 9.98
+    },
+    {
+      "line": "swarm",
+      "text": "the",
+      "start": 9.98,
+      "end": 10.64
+    },
+    {
+      "line": "swarm",
+      "text": "swarm",
+      "start": 10.64,
+      "end": 11.02
+    },
+    {
+      "line": "swarm",
+      "text": "challenges,",
+      "start": 11.02,
+      "end": 12.08
+    },
+    {
+      "line": "swarm",
+      "text": "independent",
+      "start": 12.08,
+      "end": 12.7
+    },
+    {
+      "line": "swarm",
+      "text": "security",
+      "start": 12.7,
+      "end": 13.24
+    },
+    {
+      "line": "swarm",
+      "text": "review",
+      "start": 13.24,
+      "end": 13.64
+    },
+    {
+      "line": "swarm",
+      "text": "and",
+      "start": 13.64,
+      "end": 13.9
+    },
+    {
+      "line": "swarm",
+      "text": "hard",
+      "start": 13.9,
+      "end": 14.3
+    },
+    {
+      "line": "swarm",
+      "text": "limits",
+      "start": 14.3,
+      "end": 14.86
+    },
+    {
+      "line": "swarm",
+      "text": "decide",
+      "start": 14.86,
+      "end": 15.34
+    },
+    {
+      "line": "swarm",
+      "text": "what",
+      "start": 15.34,
+      "end": 15.64
+    },
+    {
+      "line": "swarm",
+      "text": "can",
+      "start": 15.76,
+      "end": 15.86
+    },
+    {
+      "line": "swarm",
+      "text": "receive",
+      "start": 15.86,
+      "end": 16.56
+    },
+    {
+      "line": "swarm",
+      "text": "capital.",
+      "start": 16.56,
+      "end": 17.26
+    },
+    {
+      "line": "funding",
+      "text": "the",
+      "start": 18.1,
+      "end": 18.46
+    },
+    {
+      "line": "funding",
+      "text": "nair",
+      "start": 18.46,
+      "end": 18.84
+    },
+    {
+      "line": "funding",
+      "text": "hassle",
+      "start": 18.84,
+      "end": 19.34
+    },
+    {
+      "line": "funding",
+      "text": "records",
+      "start": 19.34,
+      "end": 19.84
+    },
+    {
+      "line": "funding",
+      "text": "funding",
+      "start": 19.84,
+      "end": 20.36
+    },
+    {
+      "line": "funding",
+      "text": "fee",
+      "start": 20.36,
+      "end": 21.06
+    },
+    {
+      "line": "funding",
+      "text": "income",
+      "start": 21.06,
+      "end": 21.5
+    },
+    {
+      "line": "funding",
+      "text": "and",
+      "start": 21.5,
+      "end": 21.92
+    },
+    {
+      "line": "funding",
+      "text": "expenses",
+      "start": 21.92,
+      "end": 22.42
+    },
+    {
+      "line": "funding",
+      "text": "separately.",
+      "start": 22.42,
+      "end": 23.04
+    },
+    {
+      "line": "funding",
+      "text": "It",
+      "start": 23.04,
+      "end": 23.5
+    },
+    {
+      "line": "funding",
+      "text": "uses",
+      "start": 23.5,
+      "end": 23.9
+    },
+    {
+      "line": "funding",
+      "text": "unpacked",
+      "start": 23.9,
+      "end": 24.6
+    },
+    {
+      "line": "funding",
+      "text": "demo",
+      "start": 24.6,
+      "end": 25.34
+    },
+    {
+      "line": "funding",
+      "text": "tokens.",
+      "start": 25.34,
+      "end": 26.28
+    },
+    {
+      "line": "vault",
+      "text": "100",
+      "start": 27.1,
+      "end": 27.76
+    },
+    {
+      "line": "vault",
+      "text": "demodollars,",
+      "start": 27.76,
+      "end": 29.14
+    },
+    {
+      "line": "vault",
+      "text": "enter",
+      "start": 29.14,
+      "end": 29.44
+    },
+    {
+      "line": "vault",
+      "text": "a",
+      "start": 29.44,
+      "end": 29.76
+    },
+    {
+      "line": "vault",
+      "text": "controlled",
+      "start": 29.76,
+      "end": 30.38
+    },
+    {
+      "line": "vault",
+      "text": "vault,",
+      "start": 30.38,
+      "end": 31.86
+    },
+    {
+      "line": "vault",
+      "text": "a",
+      "start": 31.86,
+      "end": 31.9
+    },
+    {
+      "line": "vault",
+      "text": "sponsor",
+      "start": 31.9,
+      "end": 32.28
+    },
+    {
+      "line": "vault",
+      "text": "fixture",
+      "start": 32.28,
+      "end": 32.86
+    },
+    {
+      "line": "vault",
+      "text": "supplies",
+      "start": 32.86,
+      "end": 33.94
+    },
+    {
+      "line": "vault",
+      "text": "the",
+      "start": 33.94,
+      "end": 34.22
+    },
+    {
+      "line": "vault",
+      "text": "$10",
+      "start": 34.22,
+      "end": 34.58
+    },
+    {
+      "line": "vault",
+      "text": "gain.",
+      "start": 34.58,
+      "end": 35.26
+    },
+    {
+      "line": "profit",
+      "text": "$13",
+      "start": 36.1,
+      "end": 36.74
+    },
+    {
+      "line": "profit",
+      "text": "demo",
+      "start": 36.74,
+      "end": 37.06
+    },
+    {
+      "line": "profit",
+      "text": "dollars",
+      "start": 37.06,
+      "end": 37.56
+    },
+    {
+      "line": "profit",
+      "text": "qualify",
+      "start": 37.56,
+      "end": 38.1
+    },
+    {
+      "line": "profit",
+      "text": "after",
+      "start": 38.1,
+      "end": 38.58
+    },
+    {
+      "line": "profit",
+      "text": "costs",
+      "start": 38.58,
+      "end": 39.1
+    },
+    {
+      "line": "profit",
+      "text": "$8",
+      "start": 39.1,
+      "end": 39.58
+    },
+    {
+      "line": "profit",
+      "text": ".45",
+      "start": 39.58,
+      "end": 39.98
+    },
+    {
+      "line": "profit",
+      "text": "goes",
+      "start": 39.98,
+      "end": 40.26
+    },
+    {
+      "line": "profit",
+      "text": "to",
+      "start": 40.26,
+      "end": 40.5
+    },
+    {
+      "line": "profit",
+      "text": "holders",
+      "start": 40.5,
+      "end": 40.94
+    },
+    {
+      "line": "profit",
+      "text": "$4",
+      "start": 40.94,
+      "end": 41.74
+    },
+    {
+      "line": "profit",
+      "text": ".55",
+      "start": 41.74,
+      "end": 42.16
+    },
+    {
+      "line": "profit",
+      "text": "stays",
+      "start": 42.16,
+      "end": 42.72
+    },
+    {
+      "line": "profit",
+      "text": "in",
+      "start": 42.72,
+      "end": 42.88
+    },
+    {
+      "line": "profit",
+      "text": "the",
+      "start": 42.88,
+      "end": 43.08
+    },
+    {
+      "line": "profit",
+      "text": "treasury",
+      "start": 43.08,
+      "end": 43.42
+    },
+    {
+      "line": "recovery",
+      "text": "failed",
+      "start": 45.1,
+      "end": 45.28
+    },
+    {
+      "line": "recovery",
+      "text": "receivers",
+      "start": 45.28,
+      "end": 45.78
+    },
+    {
+      "line": "recovery",
+      "text": "keep",
+      "start": 45.78,
+      "end": 46.14
+    },
+    {
+      "line": "recovery",
+      "text": "the",
+      "start": 46.14,
+      "end": 46.34
+    },
+    {
+      "line": "recovery",
+      "text": "entitlements,",
+      "start": 46.34,
+      "end": 47.48
+    },
+    {
+      "line": "recovery",
+      "text": "registration",
+      "start": 47.48,
+      "end": 48.1
+    },
+    {
+      "line": "recovery",
+      "text": "and",
+      "start": 48.1,
+      "end": 48.48
+    },
+    {
+      "line": "recovery",
+      "text": "retry,",
+      "start": 48.48,
+      "end": 49.28
+    },
+    {
+      "line": "recovery",
+      "text": "complete",
+      "start": 49.28,
+      "end": 49.58
+    },
+    {
+      "line": "recovery",
+      "text": "payment,",
+      "start": 49.58,
+      "end": 50.46
+    },
+    {
+      "line": "recovery",
+      "text": "public",
+      "start": 50.46,
+      "end": 50.72
+    },
+    {
+      "line": "recovery",
+      "text": "receipts",
+      "start": 50.72,
+      "end": 51.06
+    },
+    {
+      "line": "recovery",
+      "text": "show",
+      "start": 51.06,
+      "end": 51.5
+    },
+    {
+      "line": "recovery",
+      "text": "what's",
+      "start": 51.5,
+      "end": 52.14
+    },
+    {
+      "line": "recovery",
+      "text": "settled.",
+      "start": 52.14,
+      "end": 52.94
+    },
+    {
+      "line": "closing",
+      "text": "Test",
+      "start": 54.0,
+      "end": 54.18
+    },
+    {
+      "line": "closing",
+      "text": "features,",
+      "start": 54.18,
+      "end": 55.06
+    },
+    {
+      "line": "closing",
+      "text": "not",
+      "start": 55.06,
+      "end": 55.28
+    },
+    {
+      "line": "closing",
+      "text": "live",
+      "start": 55.28,
+      "end": 55.68
+    },
+    {
+      "line": "closing",
+      "text": "yield,",
+      "start": 55.68,
+      "end": 56.5
+    },
+    {
+      "line": "closing",
+      "text": "inspect",
+      "start": 56.5,
+      "end": 56.82
+    },
+    {
+      "line": "closing",
+      "text": "the",
+      "start": 56.82,
+      "end": 57.0
+    },
+    {
+      "line": "closing",
+      "text": "proof",
+      "start": 57.0,
+      "end": 57.16
+    },
+    {
+      "line": "closing",
+      "text": "and",
+      "start": 57.16,
+      "end": 57.4
+    },
+    {
+      "line": "closing",
+      "text": "code,",
+      "start": 57.4,
+      "end": 58.06
+    },
+    {
+      "line": "closing",
+      "text": "build",
+      "start": 58.06,
+      "end": 58.26
+    },
+    {
+      "line": "closing",
+      "text": "at",
+      "start": 58.26,
+      "end": 58.54
+    },
+    {
+      "line": "closing",
+      "text": "near",
+      "start": 58.54,
+      "end": 58.88
+    },
+    {
+      "line": "closing",
+      "text": "hackathon.",
+      "start": 58.88,
+      "end": 59.56
+    }
+  ]
+}

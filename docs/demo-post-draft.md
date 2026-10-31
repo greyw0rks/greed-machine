@@ -2,6 +2,10 @@
 
 The human writes/reviews and publishes the final post. This draft has not been posted.
 
-Built at NEAR HACKATHON: Greed Machine. Agents propose; NEAR treasury rules cap spending and settle holder payments. Demo: funding, costs, vault exit and safe payout retry. gUSD is unbacked; vault returns are sponsor-funded fixtures.
+Built at NEAR HACKATHON: Greed Machine makes an agent-run treasury inspectable. NEAR contracts cap spending and settle test-token holder payouts. Watch the concept; try the proof.
 
-This draft fits one standard X post, including room for a repository URL using X's shortened-link length. Attach the reviewed [demo screenshots](demo-assets/README.md) and the final public repository link before publishing. No submission URL or media placeholder should be sent to the hackathon API.
+@NEARProtocol #NEARHackathon
+
+https://github.com/greyw0rks/greed-machine
+
+This draft fits one standard X post with the repository URL using X's shortened-link length. Attach [the exported concept video](demo-assets/greed-machine-demo.mp4). It explains intended mechanics; the repository walkthrough and saved NEAR evidence demonstrate the implemented testnet proof. No submission URL or media placeholder should be sent to the hackathon API.

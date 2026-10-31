@@ -1,0 +1,166 @@
+{
+  "source": "Concept script aligned to local Whisper word timing",
+  "groups": [
+    {
+      "start": 0.4,
+      "speechEnd": 2.42,
+      "line": "opening",
+      "text": "Greed Machine is a memecoin with",
+      "end": 2.42
+    },
+    {
+      "start": 2.42,
+      "speechEnd": 5.62,
+      "line": "opening",
+      "text": "mechanics: buy, hold, and participate in",
+      "end": 5.62
+    },
+    {
+      "start": 5.62,
+      "speechEnd": 8.26,
+      "line": "opening",
+      "text": "an autonomous treasury business.",
+      "end": 8.41
+    },
+    {
+      "start": 9.1,
+      "speechEnd": 11.68,
+      "line": "funding",
+      "text": "Launch proceeds and project trading fees",
+      "end": 11.68
+    },
+    {
+      "start": 11.68,
+      "speechEnd": 14.02,
+      "line": "funding",
+      "text": "would fund the treasury.",
+      "end": 14.17
+    },
+    {
+      "start": 14.26,
+      "speechEnd": 17.26,
+      "line": "funding",
+      "text": "Retained earnings help the business keep growing.",
+      "end": 17.41
+    },
+    {
+      "start": 18.1,
+      "speechEnd": 20.72,
+      "line": "swarm",
+      "text": "An AI swarm scouts opportunities, proposes",
+      "end": 20.72
+    },
+    {
+      "start": 20.72,
+      "speechEnd": 23.02,
+      "line": "swarm",
+      "text": "strategies, and debates them.",
+      "end": 23.16
+    },
+    {
+      "start": 23.16,
+      "speechEnd": 26.26,
+      "line": "swarm",
+      "text": "Agents challenge assumptions before choosing a candidate.",
+      "end": 26.41
+    },
+    {
+      "start": 27.1,
+      "speechEnd": 30.2,
+      "line": "security",
+      "text": "Independent security reviews the candidate.",
+      "end": 30.2
+    },
+    {
+      "start": 30.2,
+      "speechEnd": 33.42,
+      "line": "security",
+      "text": "Hard rules cap spending, protect reserves,",
+      "end": 33.42
+    },
+    {
+      "start": 33.42,
+      "speechEnd": 35.28,
+      "line": "security",
+      "text": "and can reject every proposal.",
+      "end": 35.43
+    },
+    {
+      "start": 36.1,
+      "speechEnd": 38.66,
+      "line": "operations",
+      "text": "Only approved strategies receive capital.",
+      "end": 38.74
+    },
+    {
+      "start": 38.74,
+      "speechEnd": 41.04,
+      "line": "operations",
+      "text": "The machine would monitor positions, manage",
+      "end": 41.04
+    },
+    {
+      "start": 41.04,
+      "speechEnd": 44.28,
+      "line": "operations",
+      "text": "exits, and reconcile costs and losses.",
+      "end": 44.43
+    },
+    {
+      "start": 45.1,
+      "speechEnd": 47.2,
+      "line": "distribution",
+      "text": "Target: sixty percent to seventy percent",
+      "end": 47.2
+    },
+    {
+      "start": 47.2,
+      "speechEnd": 50,
+      "line": "distribution",
+      "text": "of eligible net profit, shared with",
+      "end": 50
+    },
+    {
+      "start": 50,
+      "speechEnd": 52.06,
+      "line": "distribution",
+      "text": "holders in stablecoins.",
+      "end": 52.14
+    },
+    {
+      "start": 52.14,
+      "speechEnd": 53.76,
+      "line": "distribution",
+      "text": "The rest grows the treasury.",
+      "end": 53.91
+    },
+    {
+      "start": 54,
+      "speechEnd": 54.28,
+      "line": "closing",
+      "text": "Buy.",
+      "end": 54.28
+    },
+    {
+      "start": 54.28,
+      "speechEnd": 54.9,
+      "line": "closing",
+      "text": "Hold.",
+      "end": 54.9
+    },
+    {
+      "start": 54.9,
+      "speechEnd": 55.64,
+      "line": "closing",
+      "text": "Inspect.",
+      "end": 55.64
+    },
+    {
+      "start": 55.64,
+      "speechEnd": 59.58,
+      "line": "closing",
+      "text": "A memecoin designed to do business.",
+      "end": 60
+    }
+  ]
+}

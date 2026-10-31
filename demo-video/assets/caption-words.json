@@ -1,0 +1,747 @@
+{
+  "source": "Concept script aligned to local Whisper word timing",
+  "engine": "openai/whisper-base (local cache)",
+  "modelRevision": "e37978b90ca9030d5170a5c07aadb050351a65bb",
+  "corrections": [
+    {
+      "line": "opening",
+      "type": "replace",
+      "script": "Greed",
+      "recognized": "Grid"
+    },
+    {
+      "line": "opening",
+      "type": "reviewed_spelling_variant",
+      "script": "memecoin",
+      "recognized": "memicoin"
+    },
+    {
+      "line": "opening",
+      "type": "reviewed_spelling_variant",
+      "script": "buy,",
+      "recognized": "by"
+    },
+    {
+      "line": "funding",
+      "type": "replace",
+      "script": "help",
+      "recognized": "helped"
+    },
+    {
+      "line": "swarm",
+      "type": "replace",
+      "script": "An",
+      "recognized": "and"
+    },
+    {
+      "line": "swarm",
+      "type": "replace",
+      "script": "swarm",
+      "recognized": "Swam"
+    },
+    {
+      "line": "security",
+      "type": "replace",
+      "script": "cap",
+      "recognized": "CUP"
+    },
+    {
+      "line": "distribution",
+      "type": "replace",
+      "script": "sixty",
+      "recognized": "list of"
+    },
+    {
+      "line": "distribution",
+      "type": "replace",
+      "script": "seventy percent",
+      "recognized": "70 %"
+    },
+    {
+      "line": "closing",
+      "type": "reviewed_spelling_variant",
+      "script": "Buy.",
+      "recognized": "by"
+    },
+    {
+      "line": "closing",
+      "type": "reviewed_spelling_variant",
+      "script": "memecoin",
+      "recognized": "memicoin"
+    }
+  ],
+  "words": [
+    {
+      "line": "opening",
+      "text": "Greed",
+      "start": 0.4,
+      "end": 0.72
+    },
+    {
+      "line": "opening",
+      "text": "Machine",
+      "start": 0.72,
+      "end": 1.1
+    },
+    {
+      "line": "opening",
+      "text": "is",
+      "start": 1.1,
+      "end": 1.48
+    },
+    {
+      "line": "opening",
+      "text": "a",
+      "start": 1.48,
+      "end": 1.6
+    },
+    {
+      "line": "opening",
+      "text": "memecoin",
+      "start": 1.6,
+      "end": 2.16
+    },
+    {
+      "line": "opening",
+      "text": "with",
+      "start": 2.16,
+      "end": 2.42
+    },
+    {
+      "line": "opening",
+      "text": "mechanics:",
+      "start": 2.42,
+      "end": 2.96
+    },
+    {
+      "line": "opening",
+      "text": "buy,",
+      "start": 2.96,
+      "end": 3.6
+    },
+    {
+      "line": "opening",
+      "text": "hold,",
+      "start": 3.6,
+      "end": 4.36
+    },
+    {
+      "line": "opening",
+      "text": "and",
+      "start": 4.36,
+      "end": 4.68
+    },
+    {
+      "line": "opening",
+      "text": "participate",
+      "start": 4.68,
+      "end": 5.2
+    },
+    {
+      "line": "opening",
+      "text": "in",
+      "start": 5.2,
+      "end": 5.62
+    },
+    {
+      "line": "opening",
+      "text": "an",
+      "start": 5.62,
+      "end": 5.74
+    },
+    {
+      "line": "opening",
+      "text": "autonomous",
+      "start": 5.74,
+      "end": 6.3
+    },
+    {
+      "line": "opening",
+      "text": "treasury",
+      "start": 6.3,
+      "end": 6.9
+    },
+    {
+      "line": "opening",
+      "text": "business.",
+      "start": 6.9,
+      "end": 8.26
+    },
+    {
+      "line": "funding",
+      "text": "Launch",
+      "start": 9.1,
+      "end": 9.74
+    },
+    {
+      "line": "funding",
+      "text": "proceeds",
+      "start": 9.74,
+      "end": 10.62
+    },
+    {
+      "line": "funding",
+      "text": "and",
+      "start": 10.62,
+      "end": 10.74
+    },
+    {
+      "line": "funding",
+      "text": "project",
+      "start": 10.74,
+      "end": 11.0
+    },
+    {
+      "line": "funding",
+      "text": "trading",
+      "start": 11.0,
+      "end": 11.38
+    },
+    {
+      "line": "funding",
+      "text": "fees",
+      "start": 11.38,
+      "end": 11.68
+    },
+    {
+      "line": "funding",
+      "text": "would",
+      "start": 11.68,
+      "end": 12.02
+    },
+    {
+      "line": "funding",
+      "text": "fund",
+      "start": 12.02,
+      "end": 12.36
+    },
+    {
+      "line": "funding",
+      "text": "the",
+      "start": 12.36,
+      "end": 13.02
+    },
+    {
+      "line": "funding",
+      "text": "treasury.",
+      "start": 13.02,
+      "end": 14.02
+    },
+    {
+      "line": "funding",
+      "text": "Retained",
+      "start": 14.26,
+      "end": 14.4
+    },
+    {
+      "line": "funding",
+      "text": "earnings",
+      "start": 14.4,
+      "end": 14.76
+    },
+    {
+      "line": "funding",
+      "text": "help",
+      "start": 14.76,
+      "end": 15.28
+    },
+    {
+      "line": "funding",
+      "text": "the",
+      "start": 15.28,
+      "end": 15.5
+    },
+    {
+      "line": "funding",
+      "text": "business",
+      "start": 15.5,
+      "end": 15.78
+    },
+    {
+      "line": "funding",
+      "text": "keep",
+      "start": 15.78,
+      "end": 16.2
+    },
+    {
+      "line": "funding",
+      "text": "growing.",
+      "start": 16.2,
+      "end": 17.26
+    },
+    {
+      "line": "swarm",
+      "text": "An",
+      "start": 18.1,
+      "end": 18.28
+    },
+    {
+      "line": "swarm",
+      "text": "AI",
+      "start": 18.28,
+      "end": 18.5
+    },
+    {
+      "line": "swarm",
+      "text": "swarm",
+      "start": 18.5,
+      "end": 18.84
+    },
+    {
+      "line": "swarm",
+      "text": "scouts",
+      "start": 18.84,
+      "end": 19.16
+    },
+    {
+      "line": "swarm",
+      "text": "opportunities,",
+      "start": 19.16,
+      "end": 20.38
+    },
+    {
+      "line": "swarm",
+      "text": "proposes",
+      "start": 20.46,
+      "end": 20.72
+    },
+    {
+      "line": "swarm",
+      "text": "strategies,",
+      "start": 20.72,
+      "end": 21.24
+    },
+    {
+      "line": "swarm",
+      "text": "and",
+      "start": 21.24,
+      "end": 22.0
+    },
+    {
+      "line": "swarm",
+      "text": "debates",
+      "start": 22.0,
+      "end": 22.3
+    },
+    {
+      "line": "swarm",
+      "text": "them.",
+      "start": 22.3,
+      "end": 23.02
+    },
+    {
+      "line": "swarm",
+      "text": "Agents",
+      "start": 23.16,
+      "end": 23.24
+    },
+    {
+      "line": "swarm",
+      "text": "challenge",
+      "start": 23.24,
+      "end": 23.7
+    },
+    {
+      "line": "swarm",
+      "text": "assumptions",
+      "start": 23.7,
+      "end": 24.28
+    },
+    {
+      "line": "swarm",
+      "text": "before",
+      "start": 24.28,
+      "end": 24.68
+    },
+    {
+      "line": "swarm",
+      "text": "choosing",
+      "start": 24.68,
+      "end": 25.2
+    },
+    {
+      "line": "swarm",
+      "text": "a",
+      "start": 25.2,
+      "end": 25.48
+    },
+    {
+      "line": "swarm",
+      "text": "candidate.",
+      "start": 25.48,
+      "end": 26.26
+    },
+    {
+      "line": "security",
+      "text": "Independent",
+      "start": 27.1,
+      "end": 27.46
+    },
+    {
+      "line": "security",
+      "text": "security",
+      "start": 27.46,
+      "end": 27.98
+    },
+    {
+      "line": "security",
+      "text": "reviews",
+      "start": 27.98,
+      "end": 29.0
+    },
+    {
+      "line": "security",
+      "text": "the",
+      "start": 29.0,
+      "end": 29.18
+    },
+    {
+      "line": "security",
+      "text": "candidate.",
+      "start": 29.18,
+      "end": 30.2
+    },
+    {
+      "line": "security",
+      "text": "Hard",
+      "start": 30.2,
+      "end": 30.36
+    },
+    {
+      "line": "security",
+      "text": "rules",
+      "start": 30.36,
+      "end": 31.24
+    },
+    {
+      "line": "security",
+      "text": "cap",
+      "start": 31.3,
+      "end": 31.38
+    },
+    {
+      "line": "security",
+      "text": "spending,",
+      "start": 31.38,
+      "end": 32.32
+    },
+    {
+      "line": "security",
+      "text": "protect",
+      "start": 32.32,
+      "end": 32.58
+    },
+    {
+      "line": "security",
+      "text": "reserves,",
+      "start": 32.58,
+      "end": 33.42
+    },
+    {
+      "line": "security",
+      "text": "and",
+      "start": 33.42,
+      "end": 33.62
+    },
+    {
+      "line": "security",
+      "text": "can",
+      "start": 33.62,
+      "end": 33.82
+    },
+    {
+      "line": "security",
+      "text": "reject",
+      "start": 33.82,
+      "end": 34.12
+    },
+    {
+      "line": "security",
+      "text": "every",
+      "start": 34.12,
+      "end": 34.5
+    },
+    {
+      "line": "security",
+      "text": "proposal.",
+      "start": 34.5,
+      "end": 35.28
+    },
+    {
+      "line": "operations",
+      "text": "Only",
+      "start": 36.1,
+      "end": 36.28
+    },
+    {
+      "line": "operations",
+      "text": "approved",
+      "start": 36.28,
+      "end": 36.72
+    },
+    {
+      "line": "operations",
+      "text": "strategies",
+      "start": 36.72,
+      "end": 37.18
+    },
+    {
+      "line": "operations",
+      "text": "receive",
+      "start": 37.18,
+      "end": 37.74
+    },
+    {
+      "line": "operations",
+      "text": "capital.",
+      "start": 37.74,
+      "end": 38.66
+    },
+    {
+      "line": "operations",
+      "text": "The",
+      "start": 38.74,
+      "end": 38.76
+    },
+    {
+      "line": "operations",
+      "text": "machine",
+      "start": 38.76,
+      "end": 39.04
+    },
+    {
+      "line": "operations",
+      "text": "would",
+      "start": 39.04,
+      "end": 39.26
+    },
+    {
+      "line": "operations",
+      "text": "monitor",
+      "start": 39.26,
+      "end": 39.62
+    },
+    {
+      "line": "operations",
+      "text": "positions,",
+      "start": 39.62,
+      "end": 40.86
+    },
+    {
+      "line": "operations",
+      "text": "manage",
+      "start": 40.86,
+      "end": 41.04
+    },
+    {
+      "line": "operations",
+      "text": "exits,",
+      "start": 41.04,
+      "end": 41.82
+    },
+    {
+      "line": "operations",
+      "text": "and",
+      "start": 41.94,
+      "end": 42.08
+    },
+    {
+      "line": "operations",
+      "text": "reconcile",
+      "start": 42.08,
+      "end": 42.54
+    },
+    {
+      "line": "operations",
+      "text": "costs",
+      "start": 42.54,
+      "end": 42.98
+    },
+    {
+      "line": "operations",
+      "text": "and",
+      "start": 42.98,
+      "end": 43.52
+    },
+    {
+      "line": "operations",
+      "text": "losses.",
+      "start": 43.52,
+      "end": 44.28
+    },
+    {
+      "line": "distribution",
+      "text": "Target:",
+      "start": 45.1,
+      "end": 45.96
+    },
+    {
+      "line": "distribution",
+      "text": "sixty",
+      "start": 45.96,
+      "end": 46.16
+    },
+    {
+      "line": "distribution",
+      "text": "percent",
+      "start": 46.16,
+      "end": 46.4
+    },
+    {
+      "line": "distribution",
+      "text": "to",
+      "start": 46.4,
+      "end": 46.6
+    },
+    {
+      "line": "distribution",
+      "text": "seventy",
+      "start": 46.6,
+      "end": 46.9
+    },
+    {
+      "line": "distribution",
+      "text": "percent",
+      "start": 46.9,
+      "end": 47.2
+    },
+    {
+      "line": "distribution",
+      "text": "of",
+      "start": 47.2,
+      "end": 47.44
+    },
+    {
+      "line": "distribution",
+      "text": "eligible",
+      "start": 47.44,
+      "end": 47.82
+    },
+    {
+      "line": "distribution",
+      "text": "net",
+      "start": 47.82,
+      "end": 48.54
+    },
+    {
+      "line": "distribution",
+      "text": "profit,",
+      "start": 48.54,
+      "end": 49.66
+    },
+    {
+      "line": "distribution",
+      "text": "shared",
+      "start": 49.66,
+      "end": 49.82
+    },
+    {
+      "line": "distribution",
+      "text": "with",
+      "start": 49.82,
+      "end": 50.0
+    },
+    {
+      "line": "distribution",
+      "text": "holders",
+      "start": 50.0,
+      "end": 50.26
+    },
+    {
+      "line": "distribution",
+      "text": "in",
+      "start": 50.26,
+      "end": 50.88
+    },
+    {
+      "line": "distribution",
+      "text": "stablecoins.",
+      "start": 50.88,
+      "end": 52.06
+    },
+    {
+      "line": "distribution",
+      "text": "The",
+      "start": 52.14,
+      "end": 52.16
+    },
+    {
+      "line": "distribution",
+      "text": "rest",
+      "start": 52.16,
+      "end": 52.42
+    },
+    {
+      "line": "distribution",
+      "text": "grows",
+      "start": 52.42,
+      "end": 52.84
+    },
+    {
+      "line": "distribution",
+      "text": "the",
+      "start": 52.84,
+      "end": 53.2
+    },
+    {
+      "line": "distribution",
+      "text": "treasury.",
+      "start": 53.2,
+      "end": 53.76
+    },
+    {
+      "line": "closing",
+      "text": "Buy.",
+      "start": 54.0,
+      "end": 54.28
+    },
+    {
+      "line": "closing",
+      "text": "Hold.",
+      "start": 54.28,
+      "end": 54.9
+    },
+    {
+      "line": "closing",
+      "text": "Inspect.",
+      "start": 54.9,
+      "end": 55.64
+    },
+    {
+      "line": "closing",
+      "text": "A",
+      "start": 55.64,
+      "end": 56.54
+    },
+    {
+      "line": "closing",
+      "text": "memecoin",
+      "start": 56.54,
+      "end": 57.54
+    },
+    {
+      "line": "closing",
+      "text": "designed",
+      "start": 57.54,
+      "end": 58.02
+    },
+    {
+      "line": "closing",
+      "text": "to",
+      "start": 58.02,
+      "end": 58.44
+    },
+    {
+      "line": "closing",
+      "text": "do",
+      "start": 58.44,
+      "end": 58.58
+    },
+    {
+      "line": "closing",
+      "text": "business.",
+      "start": 58.58,
+      "end": 59.58
+    }
+  ]
+}

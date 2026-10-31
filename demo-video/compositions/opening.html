@@ -1,0 +1,46 @@
+<template><style>
+@font-face{font-family:Geist;src:url('assets/fonts/GeistVF.woff');font-weight:100 900}
+#root{position:absolute;inset:0;width:100%;height:100%;font-family:Geist,sans-serif;background:#f3efe5;color:#262820}
+#root[data-dark=true]{background:#3f5138;color:#f3efe5}
+#root *{box-sizing:border-box;margin:0}
+.gm-brand{position:absolute;left:110px;top:95px;font-size:28px;font-weight:550;letter-spacing:.1em}
+.gm-chapter{position:absolute;right:110px;top:95px;font-size:28px}
+.gm-title{position:absolute;left:110px;top:186px;right:110px;font-size:86px;font-weight:600;line-height:1.12;letter-spacing:-.045em}
+.gm-footer{position:absolute;left:110px;right:110px;top:826px;font-size:30px;line-height:1.35;color:#66685b}
+.gm-rail{position:absolute;inset:918px 0 0;background:#f3efe5}
+.gm-step{font-size:30px;font-weight:550;letter-spacing:.08em;color:#66685b}
+.gm-label{font-size:47px;font-weight:550;line-height:1.15;letter-spacing:-.03em}
+.gm-copy{font-size:34px;line-height:1.4}
+.gm-arrow{font-size:64px;line-height:1;color:#3f5138}
+.gm-band{position:absolute;left:110px;right:110px;top:755px;height:110px;display:flex;align-items:center;padding:0 36px;background:#3f5138;color:#f3efe5;font-size:38px;font-weight:500}
+#opening-title{top:240px;width:900px;right:auto;font-size:112px;line-height:1.04}
+#opening-title span{display:block}
+#opening-art{position:absolute;left:1000px;top:330px;width:810px;height:auto}
+#opening-journey{position:absolute;left:110px;right:110px;top:790px;display:flex;align-items:center;gap:35px;font-size:34px;font-weight:500}
+#opening-journey .gm-arrow{color:#cda45c;font-size:48px}
+.funding-source{position:absolute;left:110px;width:900px;display:flex;align-items:center;justify-content:space-between;padding:25px 0;border-bottom:1px solid #c4c5b7}
+#funding-launch{top:350px}#funding-fees{top:485px}#funding-retained{top:620px}
+#funding-treasury{position:absolute;left:1210px;top:350px;width:600px;height:400px;padding:50px;background:#3f5138;color:#f3efe5}
+#funding-treasury .gm-step{color:#e1e1d0}#funding-treasury .gm-label{margin-top:45px;font-size:56px}#funding-treasury .gm-copy{margin-top:30px}
+.swarm-role{position:absolute;top:370px;width:520px;height:310px;padding-top:30px;border-top:2px solid #3f5138}
+#swarm-scout{left:110px}#swarm-strategist{left:700px}#swarm-challenger{left:1290px}
+.swarm-role .gm-label{margin-top:30px}.swarm-role .gm-copy{margin-top:28px;max-width:460px;color:#66685b}
+.security-panel{position:absolute;top:365px;width:760px}
+#security-review{left:110px}#security-controls{left:1050px}
+.security-panel .gm-label{font-size:54px}.security-panel ul{list-style:none;margin-top:36px;display:grid;gap:24px;font-size:36px;line-height:1.2}
+.security-panel li{padding-bottom:19px;border-bottom:1px solid #89917b}
+#security-keys{background:#cda45c;color:#262820;top:775px;height:90px}
+.operation{position:absolute;top:375px;width:365px;border-top:2px solid #3f5138;padding-top:30px}
+#operations-allocate{left:110px}#operations-monitor{left:555px}#operations-exit{left:1000px}#operations-reconcile{left:1445px}
+.operation .gm-label{margin-top:30px}.operation .gm-copy{margin-top:30px;color:#66685b}
+#operations-profit{position:absolute;left:110px;right:110px;top:760px;font-size:38px;line-height:1.35;padding-top:28px;border-top:1px solid #c4c5b7}
+#distribution-share{position:absolute;left:110px;top:360px;font-size:172px;font-weight:600;line-height:1;letter-spacing:-.06em;color:#3f5138}
+#distribution-basis{position:absolute;left:120px;top:565px;font-size:42px;font-weight:500}
+#distribution-target{position:absolute;left:120px;top:635px;max-width:670px;font-size:30px;line-height:1.4;color:#66685b}
+#distribution-holders{position:absolute;left:950px;top:360px;width:860px;height:340px;padding:55px;background:#3f5138;color:#f3efe5}
+#distribution-holders .gm-label{font-size:57px}#distribution-holders .gm-copy{margin-top:35px}
+#distribution-retained{position:absolute;left:110px;right:110px;top:780px;font-size:38px;font-weight:500;padding-top:28px;border-top:1px solid #c4c5b7}
+#closing-title{top:280px;font-size:126px}
+#closing-promise{position:absolute;left:110px;right:110px;top:515px;font-size:56px;line-height:1.25;letter-spacing:-.03em}
+#closing-link{position:absolute;left:110px;top:785px;font-size:34px;color:#e1e1d0}
+</style><div data-hf-id="hf-6sbs" id="root" data-dark="true" data-composition-id="opening" data-duration="9" data-width="1920" data-height="1080"><p data-hf-id="hf-4rqh" class="gm-brand">GREED MACHINE</p><p data-hf-id="hf-ipnq" class="gm-chapter">THE CONCEPT / 01</p><h1 data-hf-id="hf-bk8u" id="opening-title" class="gm-title"><span data-hf-id="hf-rod5">A memecoin</span><span data-hf-id="hf-nibo">with mechanics.</span></h1><img data-hf-id="hf-u081" id="opening-art" src="assets/screens/machine-art.png" alt="Greed Machine scouts, security guardian and profit split"><div data-hf-id="hf-251w" id="opening-journey"><span data-hf-id="hf-2ydg">BUY $GREED</span><span data-hf-id="hf-9zqp" class="gm-arrow">→</span><span data-hf-id="hf-bggc">HOLD</span><span data-hf-id="hf-8mxx" class="gm-arrow">→</span><span data-hf-id="hf-hfz2">ELIGIBLE PROFIT</span></div><div data-hf-id="hf-83ad" class="gm-rail"></div></div><script>const tl=gsap.timeline({paused:true});tl.to({}, {duration:9},0);tl.fromTo('#opening-journey',{opacity:0},{opacity:1,duration:.4,ease:'power2.out'},4.5);window.__timelines['opening']=tl;</script></template>

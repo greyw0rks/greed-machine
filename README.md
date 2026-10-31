@@ -1,5 +1,7 @@
 # Greed Machine
 
+[Watch the 60-second concept film](docs/demo-assets/greed-machine-demo.mp4) · [Judge walkthrough](#judge-walkthrough) · [Submission handoff](docs/YOUR_NEXT_STEPS.md)
+
 Greed Machine is an autonomous treasury business in development. Holders buy GREED and hold it; competing agents discover and debate opportunities, independent security and deterministic rules gate capital, and realized net profit supports stablecoin payouts and treasury growth. Governance is reserved for core changes.
 
 The problem is keeping a token-funded business accountable while agents run its routine operations. This prototype makes each proposal, spending limit, operating expense and holder entitlement inspectable. NEAR contracts enforce the bounded rehearsal's spending rules and settle its demo-token transfers; an operator key can call only the approved treasury methods.
@@ -7,6 +9,8 @@ The problem is keeping a token-funded business accountable while agents run its 
 The public foundation uses synthetic USDC, market fixtures and fixture recipients. A separate NEAR business rehearsal implements token funding, expenses, capped vault execution, receipt-reconstructed GREED snapshots and test-token payments. Its gUSD is unbacked, returns are sponsor-funded fixtures, and its 65/35 split is illustrative. Production launchpad/fee routing, arbitrary holder indexing and market strategies remain unfinished. See [business model](docs/business-model.md), [NEAR business demo](docs/business-demo.md) and [milestones](docs/milestones.md).
 
 ## Judge walkthrough
+
+The concept film explains the intended product. The walkthrough below demonstrates implemented simulation and NEAR testnet behavior; it does not claim the concept's production economics are deployed.
 
 1. Follow the local setup below, then open http://localhost:3014/app. Start a scenario in Operator and advance its phases. See competing proposals, independent security, settlement and protected simulated distributions.
 2. Run `npm run business:build` and `npm run business:check`. Open http://localhost:3014/testnet. See the compiled NEAR money-cycle evidence: principal, fee fixture, operating expense, vault exit and holder payments. The page labels local Sandbox evidence separately from public testnet evidence.
@@ -113,3 +117,11 @@ The policy contract cannot transfer treasury assets. `GET /api/near` remains a r
 - `tests/`, `scripts/check-foundation-ui.mjs` — regression and browser verification
 
 See [architecture](docs/architecture.md) and [demo runbook](docs/demo-runbook.md). Local hashes detect changes to recorded events; they provide no external attestation. Foundation receipts remain simulated. Business receipts represent test-token transfers on their explicitly recorded chain; vault returns remain controlled fixtures.
+
+## NEAR HACKATHON contribution and reuse
+
+The public Git history begins with [26e4316](https://github.com/greyw0rks/greed-machine/commit/26e4316), created October 25, 2026. It contains the initial application and compiled NEAR business rehearsal. [716c130](https://github.com/greyw0rks/greed-machine/commit/716c130), October 26, publishes the finalized public-testnet evidence and olive visual system. Both are within the rules' October 19–November 14 development window. This October 31 review adds the builder's exported concept film, editable video source and submission documentation; it does not replay the public transactions or claim new production functionality.
+
+Review the initial snapshot and [changes since it](https://github.com/greyw0rks/greed-machine/compare/26e4316...main). Earlier ideas/reference material are disclosed in `docs/source-build-plan.md`; the first Git snapshot is not evidence that every idea or component originated on that date. Major reused foundations are Next.js/React, Three.js, Motion, Radix, NEAR SDKs and HyperFrames. Development used AI assistance; narration was generated locally with KittenTTS 2. See [third-party notices](THIRD_PARTY_NOTICES.md) and [MIT license](LICENSE).
+
+The final competition form remains a human-confirmed action. A testnet/local-only submission is supported by the current rules when accompanied by this reproducible repository and a public X video post.

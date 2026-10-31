@@ -1,0 +1,102 @@
+{
+  "engine": "openai/whisper-medium.en (local cache)",
+  "modelRevision": "2e98eb6279edf5095af0c8dedb36bdec0acd172b",
+  "words": [
+    {
+      "line": "opening",
+      "text": "Grid",
+      "start": 0.4,
+      "end": 0.86
+    },
+    {
+      "line": "opening",
+      "text": "Machine",
+      "start": 0.86,
+      "end": 1.14
+    },
+    {
+      "line": "opening",
+      "text": "is",
+      "start": 1.14,
+      "end": 1.5
+    },
+    {
+      "line": "opening",
+      "text": "a",
+      "start": 1.5,
+      "end": 1.72
+    },
+    {
+      "line": "opening",
+      "text": "memicoin",
+      "start": 1.72,
+      "end": 2.18
+    },
+    {
+      "line": "opening",
+      "text": "with",
+      "start": 2.18,
+      "end": 2.46
+    },
+    {
+      "line": "opening",
+      "text": "mechanics,",
+      "start": 2.46,
+      "end": 3.54
+    },
+    {
+      "line": "opening",
+      "text": "buy,",
+      "start": 3.54,
+      "end": 4.26
+    },
+    {
+      "line": "opening",
+      "text": "hold,",
+      "start": 4.26,
+      "end": 4.7
+    },
+    {
+      "line": "opening",
+      "text": "and",
+      "start": 4.7,
+      "end": 4.84
+    },
+    {
+      "line": "opening",
+      "text": "participate",
+      "start": 4.84,
+      "end": 5.36
+    },
+    {
+      "line": "opening",
+      "text": "in",
+      "start": 5.36,
+      "end": 5.64
+    },
+    {
+      "line": "opening",
+      "text": "an",
+      "start": 5.64,
+      "end": 5.88
+    },
+    {
+      "line": "opening",
+      "text": "autonomous",
+      "start": 5.88,
+      "end": 6.36
+    },
+    {
+      "line": "opening",
+      "text": "treasury",
+      "start": 6.36,
+      "end": 7.08
+    },
+    {
+      "line": "opening",
+      "text": "business.",
+      "start": 7.08,
+      "end": 8.26
+    }
+  ]
+}

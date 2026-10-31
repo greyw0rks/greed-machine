@@ -14,3 +14,7 @@ contracts/**/target/
 demo-video/.hyperframes/
 demo-video/assets/audio/voice/raw/
 demo-video/renders/
+demo-video/.thumbnails/
+demo-video/.waveform-cache/
+
+.archive/

@@ -1,0 +1,18 @@
+{
+  "sources": [
+    {
+      "id": "machine-art",
+      "path": "demo-video/assets/screens/machine-art.png",
+      "sourceRoute": "/",
+      "sourceElement": ".scene-canvas canvas",
+      "deviceScaleFactor": 2,
+      "reducedMotion": true,
+      "hiddenElements": [
+        ".scene-pause",
+        ".scene-labels"
+      ],
+      "sha256": "d28cda2ddec052cb41b0d230eca51b1a725a8d8784895ab56c0402fad44ecac9"
+    }
+  ],
+  "errors": []
+}

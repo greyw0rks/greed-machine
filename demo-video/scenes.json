@@ -1,0 +1,47 @@
+[
+  {
+    "id": "opening",
+    "start": 0,
+    "duration": 9,
+    "dark": true,
+    "title": "A memecoin with mechanics."
+  },
+  {
+    "id": "funding",
+    "start": 9,
+    "duration": 9,
+    "title": "Fuel for the treasury."
+  },
+  {
+    "id": "swarm",
+    "start": 18,
+    "duration": 9,
+    "title": "Many minds. One candidate."
+  },
+  {
+    "id": "security",
+    "start": 27,
+    "duration": 9,
+    "dark": true,
+    "title": "A proposal earns permission."
+  },
+  {
+    "id": "operations",
+    "start": 36,
+    "duration": 9,
+    "title": "Capital works within rules."
+  },
+  {
+    "id": "distribution",
+    "start": 45,
+    "duration": 9,
+    "title": "Profit flows back to holders."
+  },
+  {
+    "id": "closing",
+    "start": 54,
+    "duration": 6,
+    "dark": true,
+    "title": "Buy. Hold. Inspect."
+  }
+]

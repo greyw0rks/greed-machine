@@ -1,0 +1,72 @@
+{
+  "engine": "openai/whisper-base (local cache)",
+  "modelRevision": "e37978b90ca9030d5170a5c07aadb050351a65bb",
+  "words": [
+    {
+      "line": "closing",
+      "text": "Demotorgons,",
+      "start": 54.0,
+      "end": 55.38
+    },
+    {
+      "line": "closing",
+      "text": "control",
+      "start": 55.38,
+      "end": 55.64
+    },
+    {
+      "line": "closing",
+      "text": "returns,",
+      "start": 55.64,
+      "end": 56.78
+    },
+    {
+      "line": "closing",
+      "text": "inspect",
+      "start": 56.78,
+      "end": 57.08
+    },
+    {
+      "line": "closing",
+      "text": "the",
+      "start": 57.08,
+      "end": 57.4
+    },
+    {
+      "line": "closing",
+      "text": "proof",
+      "start": 57.4,
+      "end": 57.54
+    },
+    {
+      "line": "closing",
+      "text": "and",
+      "start": 57.54,
+      "end": 57.92
+    },
+    {
+      "line": "closing",
+      "text": "code,",
+      "start": 57.92,
+      "end": 58.88
+    },
+    {
+      "line": "closing",
+      "text": "built",
+      "start": 58.88,
+      "end": 59.08
+    },
+    {
+      "line": "closing",
+      "text": "at",
+      "start": 59.08,
+      "end": 59.6
+    },
+    {
+      "line": "closing",
+      "text": "Nierhakatun.",
+      "start": 59.6,
+      "end": 60.7
+    }
+  ]
+}

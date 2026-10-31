@@ -1,0 +1,50 @@
+{
+  "provider": "kitten-tts-2",
+  "model": "KittenML/kitten-tts-2",
+  "sample_rate": 24000,
+  "duration": 60.0,
+  "lines": [
+    {
+      "id": "opening",
+      "start": 0.4,
+      "end": 8.279791666666666,
+      "text": "Greed Machine is a memecoin with mechanics: buy, hold, and participate in an autonomous treasury business."
+    },
+    {
+      "id": "funding",
+      "start": 9.1,
+      "end": 17.280166666666666,
+      "text": "Launch proceeds and project trading fees would fund the treasury. Retained earnings help the business keep growing."
+    },
+    {
+      "id": "swarm",
+      "start": 18.1,
+      "end": 26.28775,
+      "text": "An AI swarm scouts opportunities, proposes strategies, and debates them. Agents challenge assumptions before choosing a candidate."
+    },
+    {
+      "id": "security",
+      "start": 27.1,
+      "end": 35.29175,
+      "text": "Independent security reviews the candidate. Hard rules cap spending, protect reserves, and can reject every proposal."
+    },
+    {
+      "id": "operations",
+      "start": 36.1,
+      "end": 44.29291666666666,
+      "text": "Only approved strategies receive capital. The machine would monitor positions, manage exits, and reconcile costs and losses."
+    },
+    {
+      "id": "distribution",
+      "start": 45.1,
+      "end": 53.781375,
+      "text": "Target: sixty percent to seventy percent of eligible net profit, shared with holders in stablecoins. The rest grows the treasury."
+    },
+    {
+      "id": "closing",
+      "start": 54.0,
+      "end": 59.59620833333334,
+      "text": "Buy. Hold. Inspect. A memecoin designed to do business."
+    }
+  ]
+}

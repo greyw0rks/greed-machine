@@ -1,0 +1,126 @@
+{
+  "engine": "openai/whisper-base (local cache)",
+  "modelRevision": "e37978b90ca9030d5170a5c07aadb050351a65bb",
+  "words": [
+    {
+      "line": "distribution",
+      "text": "Target,",
+      "start": 45.1,
+      "end": 46.7
+    },
+    {
+      "line": "distribution",
+      "text": "60",
+      "start": 46.7,
+      "end": 48.02
+    },
+    {
+      "line": "distribution",
+      "text": "%",
+      "start": 48.02,
+      "end": 48.36
+    },
+    {
+      "line": "distribution",
+      "text": "to",
+      "start": 48.36,
+      "end": 48.6
+    },
+    {
+      "line": "distribution",
+      "text": "70",
+      "start": 48.6,
+      "end": 48.98
+    },
+    {
+      "line": "distribution",
+      "text": "%",
+      "start": 48.98,
+      "end": 49.32
+    },
+    {
+      "line": "distribution",
+      "text": "of",
+      "start": 49.32,
+      "end": 49.62
+    },
+    {
+      "line": "distribution",
+      "text": "eligible",
+      "start": 49.62,
+      "end": 50.04
+    },
+    {
+      "line": "distribution",
+      "text": "net",
+      "start": 50.04,
+      "end": 50.94
+    },
+    {
+      "line": "distribution",
+      "text": "profit,",
+      "start": 50.94,
+      "end": 52.98
+    },
+    {
+      "line": "distribution",
+      "text": "Shed",
+      "start": 53.34,
+      "end": 53.58
+    },
+    {
+      "line": "distribution",
+      "text": "with",
+      "start": 53.58,
+      "end": 53.74
+    },
+    {
+      "line": "distribution",
+      "text": "holders",
+      "start": 53.74,
+      "end": 54.06
+    },
+    {
+      "line": "distribution",
+      "text": "in",
+      "start": 54.06,
+      "end": 54.82
+    },
+    {
+      "line": "distribution",
+      "text": "stablecoins,",
+      "start": 54.82,
+      "end": 56.64
+    },
+    {
+      "line": "distribution",
+      "text": "the",
+      "start": 56.64,
+      "end": 56.74
+    },
+    {
+      "line": "distribution",
+      "text": "rest",
+      "start": 56.74,
+      "end": 57.06
+    },
+    {
+      "line": "distribution",
+      "text": "grows",
+      "start": 57.06,
+      "end": 57.58
+    },
+    {
+      "line": "distribution",
+      "text": "the",
+      "start": 57.58,
+      "end": 58.0
+    },
+    {
+      "line": "distribution",
+      "text": "treasury.",
+      "start": 58.0,
+      "end": 58.64
+    }
+  ]
+}

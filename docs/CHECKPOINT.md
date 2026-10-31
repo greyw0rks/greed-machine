@@ -1,46 +1,26 @@
-# Greed Machine checkpoint — October 26, 2026
+# Greed Machine checkpoint — October 31, 2026
 
-The user confirmed that eligibility is acceptable and asked to complete the NEAR hackathon requirements. Live https://nearhackathon.com/HACKATHON.md was read again: submissions open November 1 at 00:00 UTC and close November 14 at 23:59 UTC. No API submission has been attempted.
+The builder asked to finish everything possible, then leave personal posting and submission to them. The definitive handoff is [YOUR_NEXT_STEPS.md](YOUR_NEXT_STEPS.md).
 
-## Completed and verified
+## Completed in this revision
 
-- The public simulation foundation and earlier NEAR policy/token evidence remain preserved.
-- The separate NEAR business rehearsal is implemented and verified locally. It settles actual NEP-141 demo-token transfers between compiled treasury, vault and token contracts.
-- Launch-fixture principal, fee-fixture revenue and a unique operating invoice are accounted separately. Spending limits, fixed reserves, a restricted operator key and guardian pause protect the bounded action.
-- Full token receipt history reconstructs a pinned GREED holder snapshot. A 60-second period freezes exact entitlements; a later transfer cannot change them.
-- A failed receiver keeps its liability until sponsored registration and retry. Paid entitlements reject replay. An ambiguous broadcast is recovered by its saved transaction hash without another signature/send.
-- `npm run verify`: 54/54 application tests, TypeScript and production build passed.
-- `npm run business:build`: all three Rust projects built successfully; the demo-token build is used for both gUSD and GREED.
-- `npm run business:check`: 25/25 isolated compiled NEAR Sandbox checks passed. Final treasury: 1,004.55 gUSD; holder payments: 8.45 gUSD; unpaid liabilities: zero.
-- `npm run business:ui`: four desktop/mobile proof and navigation checks passed, no page errors. Screenshots and report are in `docs/demo-assets/`.
-- README explains the problem, NEAR's role, exact judge actions, Rust prerequisites, evidence boundaries and recommended tracks. The demo copy fits one X post with room for a shortened repository link.
+- Found the builder’s October 28 concept export and copied it to `docs/demo-assets/greed-machine-demo.mp4`. The older walkthrough is preserved privately under `.archive/`. Do not rerender.
+- Verified 60 seconds, 1,800 H.264 frames at 1920×1080/30 fps, stereo AAC, 23 ordered caption cues, -18.67 dB RMS, -1.35 dB peak and zero clipped native decoded samples. Reviewed all seven scene samples. Saved `docs/demo-assets/video-delivery-check.json`.
+- Fixed the delivery checker’s artificial stereo-downmix gain; the film itself was unchanged. Source-composition verification remains the saved October 28 HyperFrames 0.8.210 result with no errors/warnings.
+- Added MIT LICENSE, third-party notices and Geist OFL; documented public revision history, reused libraries and AI assistance in README.
+- Prepared the concept film, editable source, tagged X copy and truthful submission description for the already-authorized public GitHub repository. Private voice references, keys, databases, journals and caches are excluded. The separate experimental brag-video remains local.
+- Re-read and saved current NEAR rules. They accept testnet-only work and a local-only demo with public repo, reproducible README and X video. Required X tags are @NEARProtocol and #NEARHackathon. Work from October 19 is eligible; earlier baseline/reuse must be disclosed.
 
-The recorded gas-cost field was corrected to `nearGasCostYocto`; it represents token burn in yoctoNEAR. Future rehearsal exports also record gas units separately. This reporting correction does not change contract behavior or send any transaction.
+## Existing verified implementation
 
-## Confirmed public completion and current work
+The simulation foundation, authenticated wallet/governance proof, provider cost accounting and recovery are complete. The compiled business rehearsal passed 25 Sandbox checks. The public testnet rehearsal completed October 25 with 11 checks and independent finalized observation: 1,004.55 unbacked gUSD treasury, 8.45 gUSD holder payments and no unpaid liabilities. Saved evidence is `evidence/business-testnet.json` and `evidence/business-testnet-observation.json`; preserve signed journals and never replay the run.
 
-The user confirmed both public steps. The public business rehearsal completed October 25 at 22:47:12 UTC: all 11 checks passed. An independent finalized observation at 23:06:35 UTC reconciles pinned builds, treasury ledger, 1,004.55 gUSD cash, 8.45 gUSD holder payments and zero unpaid liabilities. Evidence is in `evidence/business-testnet.json` and `evidence/business-testnet-observation.json`. Preserve this completed run; do not deploy or pay it again.
+The last application verification (October 27) passed 54 tests, TypeScript/build, 18 foundation captures and four business captures. October 31 changes are documentation/media and the video checker; application and chain tests were not rerun. No production trading, mainnet payout or external DeFi return is claimed. Exact economics, launchpad/fee routing, live adapters, arbitrary holder indexing and production stablecoin distributions remain future work; 65/35 is illustrative.
 
-Guardian gas recovery used 0.13 test NEAR from the existing setup buffer. The pause finalized under its original signed hash after a definite insufficient-balance rejection and gas funding. No replacement signature or run ID was created. Plain token transfers now attach 30 Tgas; treasury actions preserve their original journaled 180 Tgas.
+## Left to the builder
 
-The requested olive/ivory/charcoal/amber palette is implemented across the site, Three.js and reduced-motion fallback. The production build and 18 desktop/mobile foundation captures pass; four refreshed public business captures pass with no page errors.
+1. Watch the exported film with sound and publish the prepared tagged X video post. Supply its public URL.
+2. Confirm project/team/contact, team-size category, tracks, own mainnet NEAR prize account, description and contact consent in the official form.
+3. Submit once per project during November 1–14; deadline November 14 at 23:59 UTC / November 15 at 00:59 Lagos. If using the API, show the exact payload and obtain explicit confirmation before sending; preserve one requestId for retries. No successful submission is recorded here.
 
-Approved repository: `https://github.com/greyw0rks/greed-machine`, branch `main`. Publication remains pending. Local credentials, signed journals and databases are ignored and excluded from frontend traces. Initial reviewed source is saved in local commit `26e4316`; public evidence, palette and demo changes must be included in the next reviewed commit.
-
-The user requested the demo file with captions and local KittenTTS 2 narration. `demo-video/` contains the selected seven-scene, 60-second landscape film, real public app captures and generation/reproduction tools. Opening and swarm takes are preserved; the other five takes are generating from the cached model and existing private voice reference. Raw takes are ignored. HyperFrames was upgraded from 0.8.200 to 0.8.201 and its composition check passed. Complete and inspect captions, narration and the MP4 before marking the video done.
-
-1. Finish the captioned Kitten2 demo. Validate the full composition, inspect decoded delivery frames and measure audio.
-2. Review and publish source, public evidence and final demo to the already-approved GitHub destination. Exclude private reference media, credentials, journals and databases.
-3. The human publishes their X demo post with screenshots/video and supplies its public URL.
-4. Collect human-confirmed project name, lead name, email, team-size category, tracks, mainnet prize account and description. Arc/Clerk emails and testnet accounts are not assumed to be submission fields.
-5. Ask whether the team already submitted, read the contact notice verbatim and obtain agreement. Re-read live rules, validate every exact API field, generate and preserve one requestId, display the full payload and wait for explicit confirmation. Submit only during the open window. Keep personal payloads outside the repository.
-
-See [submission-checklist.md](submission-checklist.md) and [demo-post-draft.md](demo-post-draft.md).
-
-## Boundaries and recovery
-
-gUSD is unbacked, launch/fee/vault returns are sponsor fixtures, the 65/35 split is illustrative, and the holder snapshot is operator-attested within an immutable roster. External DeFi integration, market fee routing and production economics remain unfinished. Model agents receive no keys.
-
-Keep `.near/business-transactions.json` and its decision/snapshot files if public execution is interrupted. Preserve the exact request, original transaction bytes and hash; an unknown status stops the runner. Never replace an uncertain payment or create a new run ID to bypass it.
-
-Tests and browser captures use temporary databases and local/mock providers. The normal demo database, earlier testnet evidence and scheduler state were not changed by this work. The scheduler remains disabled. Public business signing is complete under the confirmed plan. No mainnet action, repository push, X post or submission has occurred at this checkpoint.
+The scheduler remains disabled. No mainnet action, new testnet payment, social post or hackathon form submission occurred in delivery preparation.

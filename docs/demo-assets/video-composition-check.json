@@ -1,0 +1,181 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 9
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 60,
+    "samples": [
+      0,
+      4.5,
+      8.967,
+      9.033,
+      13.5,
+      17.967,
+      18.033,
+      22.5,
+      26.967,
+      27.033,
+      31.5,
+      35.967,
+      36.033,
+      40.5,
+      44.967,
+      45.033,
+      49.5,
+      53.967,
+      54.033,
+      57,
+      59.9,
+      60
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0,
+      17.967,
+      31.5,
+      45.033,
+      59.9
+    ],
+    "checked": 38,
+    "passed": 38
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 480
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": true,
+    "files": [
+      ".hyperframes/artifacts/snapshots/3ab692d9-204a-4856-bdbf-a0e655751504/frame-00-at-0.0s.png",
+      ".hyperframes/artifacts/snapshots/3ab692d9-204a-4856-bdbf-a0e655751504/frame-01-at-18.0s.png",
+      ".hyperframes/artifacts/snapshots/3ab692d9-204a-4856-bdbf-a0e655751504/frame-02-at-31.5s.png",
+      ".hyperframes/artifacts/snapshots/3ab692d9-204a-4856-bdbf-a0e655751504/frame-03-at-45.0s.png",
+      ".hyperframes/artifacts/snapshots/3ab692d9-204a-4856-bdbf-a0e655751504/frame-04-at-59.9s.png"
+    ],
+    "times": [
+      0,
+      17.967,
+      31.5,
+      45.033,
+      59.9
+    ],
+    "findingFiles": []
+  },
+  "saved": {
+    "id": "2195f08f-21a5-4c0b-bbae-1d1432e6defa",
+    "revision": null,
+    "report": "/home/greyw0rks/greed-machine/demo-video/.hyperframes/artifacts/checks/2195f08f-21a5-4c0b-bbae-1d1432e6defa.json",
+    "attribution": "inputs-changed"
+  },
+  "_meta": {
+    "version": "0.8.210",
+    "latestVersion": "0.8.210",
+    "updateAvailable": false
+  },
+  "handoff": {
+    "checkedDate": "2026-10-28",
+    "studioUrl": "http://localhost:3004/#project/demo-video",
+    "renderOwner": "builder",
+    "exportStatus": "Concept MP4 pending builder export; existing MP4 is the earlier walkthrough.",
+    "audioReview": "Exact waveform comparison, levels and local transcript reviewed; no claim of listening.",
+    "sourceSha256": {
+      "index.html": "9e8a4ae41d865c355d8eb292d882f44e7afab612a9c13018de0563209acf2aa5",
+      "scripts/build-film.mjs": "a3d7bbba6691871316bc301bb60f3bb3357050a64ab4cf99e75aec9cf81d4321",
+      "compositions/funding.html": "c6b4820f76aa8a4ef7bbaeaff06a30e141d58a305ec1cfdf29414c52a1ac9f60",
+      "compositions/distribution.html": "3ea834493f44be1bd6100b2c13caa072a2367535bb90f7371b4b5f698040f534",
+      "compositions/captions.html": "1c26d203638ba18468a43c1bdd5e00bcc222635a1190ef89051ce8d4b65633e3",
+      "compositions/security.html": "687c1ff5bd1172b488c9f2b2a9a90a3ce6d280c3ff593065a8f4e70c367eb3f9",
+      "compositions/opening.html": "1ee7598bd1f75390de12a5fea1a3c322f33dee32a916e5e7b61454906df3ddd4",
+      "compositions/swarm.html": "cbc335d3e8a3f7a17e9906b8761c300b8213301923f46259184c47d0ecebc459",
+      "compositions/operations.html": "5453e41f11e03f01d0e7d644c4baaddc8951ed6be70fb64a0e18a1ddc5f2e56b",
+      "compositions/closing.html": "00a59b2a3517d508c75147d6ca2d80891b9362422df1cd828410b971add26fb8",
+      "narration.json": "abb27c1937f07be1fd3e5c6a6bb5a972076e8c77639a7f1804d1e6e8eff07a45",
+      "assets/caption-words.json": "62efae83b5d105bc17a3ae18dd9b3e58cace2a5afb9deb54aa68fcf415b1e428",
+      "assets/captions.json": "35c668aee3499752dec4c8665cadb1cd7c54dfbd51f1014d4046d19b013c5a05",
+      "greed-machine-kitten2.srt": "f83c92b8811af5481cddef6233bc37b10a2dc0122c28caa630ae881cebc3ba54"
+    },
+    "visualReview": {
+      "inspectedTimes": [
+        0,
+        13.5,
+        22.5,
+        31.5,
+        42,
+        49.5,
+        59.9
+      ],
+      "result": "Opener, all seven mounted scenes, readable profit formula and closing hold inspected.",
+      "snapshotTimes": [
+        0,
+        4.5,
+        13.5,
+        22.5,
+        31.5,
+        40.5,
+        42,
+        49.5,
+        57,
+        59.9
+      ],
+      "keyframeProof": "Profit formula opacity reveal at scene-local 5.4\u20135.8 seconds; full frame at absolute 42 seconds inspected."
+    }
+  }
+}

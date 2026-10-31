@@ -1,0 +1,91 @@
+1
+00:00:00,400 --> 00:00:02,420
+Greed Machine is a memecoin with
+
+2
+00:00:02,420 --> 00:00:05,620
+mechanics: buy, hold, and participate in
+
+3
+00:00:05,620 --> 00:00:08,410
+an autonomous treasury business.
+
+4
+00:00:09,100 --> 00:00:11,680
+Launch proceeds and project trading fees
+
+5
+00:00:11,680 --> 00:00:14,170
+would fund the treasury.
+
+6
+00:00:14,260 --> 00:00:17,410
+Retained earnings help the business keep growing.
+
+7
+00:00:18,100 --> 00:00:20,720
+An AI swarm scouts opportunities, proposes
+
+8
+00:00:20,720 --> 00:00:23,160
+strategies, and debates them.
+
+9
+00:00:23,160 --> 00:00:26,410
+Agents challenge assumptions before choosing a candidate.
+
+10
+00:00:27,100 --> 00:00:30,200
+Independent security reviews the candidate.
+
+11
+00:00:30,200 --> 00:00:33,420
+Hard rules cap spending, protect reserves,
+
+12
+00:00:33,420 --> 00:00:35,430
+and can reject every proposal.
+
+13
+00:00:36,100 --> 00:00:38,740
+Only approved strategies receive capital.
+
+14
+00:00:38,740 --> 00:00:41,040
+The machine would monitor positions, manage
+
+15
+00:00:41,040 --> 00:00:44,430
+exits, and reconcile costs and losses.
+
+16
+00:00:45,100 --> 00:00:47,200
+Target: sixty percent to seventy percent
+
+17
+00:00:47,200 --> 00:00:50,000
+of eligible net profit, shared with
+
+18
+00:00:50,000 --> 00:00:52,140
+holders in stablecoins.
+
+19
+00:00:52,140 --> 00:00:53,910
+The rest grows the treasury.
+
+20
+00:00:54,000 --> 00:00:54,280
+Buy.
+
+21
+00:00:54,280 --> 00:00:54,900
+Hold.
+
+22
+00:00:54,900 --> 00:00:55,640
+Inspect.
+
+23
+00:00:55,640 --> 00:01:00,000
+A memecoin designed to do business.
