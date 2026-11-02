@@ -1,11 +1,16 @@
-# Unpublished demo-post draft
+# Unpublished X demo draft
 
-The human writes/reviews and publishes the final post. This draft has not been posted.
+The human reviews and publishes this post with the exported app/testnet walkthrough attached. The agent has not posted it.
 
-Built at NEAR HACKATHON: Greed Machine makes an agent-run treasury inspectable. NEAR contracts cap spending and settle test-token holder payouts. Watch the concept; try the proof.
+<!-- post:start -->
+How can holders inspect an agent-run treasury?
+
+Greed Machine, built at NEAR HACKATHON: NEAR contracts cap spending and settle demo-token payouts. Watch a failed payout retry. What rule would you add?
 
 @NEARProtocol #NEARHackathon
-
 https://github.com/greyw0rks/greed-machine
+<!-- post:end -->
 
-This draft fits one standard X post with the repository URL using X's shortened-link length. Attach [the exported concept video](demo-assets/greed-machine-demo.mp4). It explains intended mechanics; the repository walkthrough and saved NEAR evidence demonstrate the implemented testnet proof. No submission URL or media placeholder should be sent to the hackathon API.
+The draft fits a standard 280-character X post using the 23-character shortened-link length. Attach the reviewed walkthrough, which shows the app simulation and the separate completed NEAR testnet proof. The concept film and [screenshots](demo-assets/README.md) may accompany it. gUSD is unbacked; vault returns are sponsor-funded fixtures, and production economics remain open.
+
+After posting, use the public X status URL as `demoUrl`. Local files and unposted drafts are not submission URLs.

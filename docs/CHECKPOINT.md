@@ -1,3 +1,23 @@
+# Greed Machine checkpoint — November 2, 2026
+
+## Current handoff
+
+The builder asked to resume and finish the repository/submission package and explicitly took responsibility for rendering and exporting the videos. They confirmed that Greed Machine has not been submitted and is their only entry in this NEAR hackathon.
+
+Live rules were fetched November 2 and refreshed in `docs/HACKATHON.md`. Development from October 19 is eligible; submissions close November 14 at 23:59 UTC. The current rules require `@NEARProtocol`, `#NEARHackathon` and “built at NEAR HACKATHON” in the X post, and a video for a local-only demo. The repository is submitted once; the contact-email limit is two independent entries rather than the older one-team rule.
+
+The application, contracts and preserved public rehearsal are complete. MIT licensing, attribution, judge development-scope links, X copy, a separate form description and the remaining-step checklist are prepared for publication. The source history begins October 25 at `26e4316`; no earlier tracked baseline exists. A dedicated `near-hackathon-2026` branch identifies the entry, with the initial implementation and follow-up diff linked in README.
+
+The current local video projects are `videos/greed-concept-2026-11-02` (60 seconds) and `videos/greed-walkthrough-2026-11-02` (80 seconds), now pinned to HyperFrames 0.9.4. Their notes still mark final captions and complete playback review pending. They remain local work pending that review and the builder's export. The earlier concept film and editable `demo-video/` source are already published in `7afd9a5`; preserve that delivery. The published `demo-video` and existing MP4 are the earlier verified October 28 concept cut and must not be labelled as the new delivery. No video render/export was performed in this resumption.
+
+The builder next exports/reviews the walkthrough and publishes the X post, then completes the human submission fields. Use `docs/YOUR_NEXT_STEPS.md`, `docs/submission-description.md` and `docs/submission-checklist.md`. Do not invent identity, email, mainnet payout account, tracks, consent or public post URL. No X post, submission, new public financial transaction or mainnet action has been sent. Preserve the normal database, ignored signing journal and disabled scheduler.
+
+Fresh November 2 verification passed all 54 application tests, TypeScript and the production webpack build. The submission package checks confirm a 254-character weighted X post, a 1,143-character description and resolving local documentation links.
+
+Repository recovery: public `main` was already at `7afd9a5` (October 31), while the original workspace was still based on `716c130`. This update is prepared in `/tmp/greed-submission-package-20261102` on `codex/greed-submission-package-20261102`, based on the existing public update. The builder’s working video files in the original workspace are preserved. Use the published branch/history when resuming repository work; do not push the old local `main` over it.
+
+## Preserved October 31 delivery handoff
+
 # Greed Machine checkpoint — October 31, 2026
 
 The builder asked to finish everything possible, then leave personal posting and submission to them. The definitive handoff is [YOUR_NEXT_STEPS.md](YOUR_NEXT_STEPS.md).

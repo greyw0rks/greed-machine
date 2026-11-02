@@ -60,16 +60,16 @@ Provider invoice lookup remains manual. Model analysis does not turn the synthet
 - A 60-second cadence freezes receipt-reconstructed GREED weights and exact holder entitlements. Failed receivers retain liabilities; sponsored registration enables retry without paying an entitlement twice.
 - The signed-transaction journal recovers an ambiguous broadcast by its original hash. A changed request cannot reuse the saved step.
 - Validation: 54 application tests, TypeScript, production build and 25 compiled Sandbox checks. The final ledger contains 1,004.55 gUSD, with 8.45 gUSD successfully paid and zero unpaid liabilities.
-- Evidence: [compiled rehearsal](../evidence/business-sandbox.json), [reproduction guide](business-demo.md), and [exact public testnet plan awaiting confirmation](testnet-plan.md).
+- Evidence: [compiled rehearsal](../evidence/business-sandbox.json), [reproduction guide](business-demo.md), and [completed public testnet plan](testnet-plan.md).
 
-gUSD is unbacked, the vault result is sponsor-funded, and the snapshot is operator-attested within an immutable roster. This separate rehearsal is not the simulation foundation's production adapter. Public business deployment and repository publication remain pending.
+gUSD is unbacked, the vault result is sponsor-funded, and the snapshot is operator-attested within an immutable roster. This separate rehearsal is not the simulation foundation's production adapter. Public business deployment and initial repository publication were subsequently completed, as recorded below.
 
 ## Next: publication and submission preparation
 
-1. Obtain confirmation of [the exact plan](testnet-plan.md), complete the public business rehearsal and independently verify finalized balances/builds.
-2. Refresh reviewed demo screenshots with public evidence and publish the reviewed repository after explicit confirmation.
-3. The human publishes their X demo post with media and supplies the public URL and their submission details.
-4. Re-read live hackathon rules, validate the full payload and obtain approval before submitting during November 1–14. Follow [the checklist](submission-checklist.md).
+1. The public rehearsal, finalized verification, refreshed screenshots and initial repository publication are complete. The November 2 package adds licensing, development-scope links, updated X copy and a prepared description.
+2. The builder renders/exports and reviews the new 80-second app/testnet walkthrough and selected 60-second concept film. Final caption/playback review remains open in the local video projects.
+3. The human publishes their X demo post with the reviewed video, “built at NEAR HACKATHON,” `@NEARProtocol` and `#NEARHackathon`, then supplies the public URL and submission fields.
+4. Re-read live rules, validate the full payload and obtain approval before submitting during November 1–14. Follow [the checklist](submission-checklist.md). The builder confirmed November 2 that this is their only NEAR entry and has not been submitted.
 
 ## Beyond the hackathon demonstration
 

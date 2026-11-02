@@ -1,6 +1,6 @@
 # Greed Machine
 
-[Watch the 60-second concept film](docs/demo-assets/greed-machine-demo.mp4) · [Judge walkthrough](#judge-walkthrough) · [Submission handoff](docs/YOUR_NEXT_STEPS.md)
+[Watch the earlier 60-second concept film](docs/demo-assets/greed-machine-demo.mp4) · [Judge walkthrough](#judge-walkthrough) · [Submission handoff](docs/YOUR_NEXT_STEPS.md)
 
 Greed Machine is an autonomous treasury business in development. Holders buy GREED and hold it; competing agents discover and debate opportunities, independent security and deterministic rules gate capital, and realized net profit supports stablecoin payouts and treasury growth. Governance is reserved for core changes.
 
@@ -120,8 +120,10 @@ See [architecture](docs/architecture.md) and [demo runbook](docs/demo-runbook.md
 
 ## NEAR HACKATHON contribution and reuse
 
-The public Git history begins with [26e4316](https://github.com/greyw0rks/greed-machine/commit/26e4316), created October 25, 2026. It contains the initial application and compiled NEAR business rehearsal. [716c130](https://github.com/greyw0rks/greed-machine/commit/716c130), October 26, publishes the finalized public-testnet evidence and olive visual system. Both are within the rules' October 19–November 14 development window. This October 31 review adds the builder's exported concept film, editable video source and submission documentation; it does not replay the public transactions or claim new production functionality.
+The [November 2 rules snapshot](docs/HACKATHON.md) permits development from the October 19 announcement through November 14. The first tracked implementation, [26e4316](https://github.com/greyw0rks/greed-machine/commit/26e4316), was committed October 25 and contains the application, NEAR contracts, tests and reproduction guides. The October 26 update adds reconciled public business evidence and the current visual system. There is no earlier tracked baseline in this repository.
 
-Review the initial snapshot and [changes since it](https://github.com/greyw0rks/greed-machine/compare/26e4316...main). Earlier ideas/reference material are disclosed in `docs/source-build-plan.md`; the first Git snapshot is not evidence that every idea or component originated on that date. Major reused foundations are Next.js/React, Three.js, Motion, Radix, NEAR SDKs and HyperFrames. Development used AI assistance; narration was generated locally with KittenTTS 2. See [third-party notices](THIRD_PARTY_NOTICES.md) and [MIT license](LICENSE).
+The dedicated [near-hackathon-2026 branch](https://github.com/greyw0rks/greed-machine/tree/near-hackathon-2026) contains the entry. Review the initial implementation above and [subsequent changes](https://github.com/greyw0rks/greed-machine/compare/26e4316...near-hackathon-2026). Original code and documentation use the [MIT license](LICENSE); libraries, fonts and AI-assisted work are disclosed in [third-party notices](THIRD_PARTY_NOTICES.md).
 
-The final competition form remains a human-confirmed action. A testnet/local-only submission is supported by the current rules when accompanied by this reproducible repository and a public X video post.
+The builder confirmed November 2 that Greed Machine has not been submitted and is their only entry in this NEAR hackathon. The application and public proof are ready to reproduce. The builder is rendering and exporting the new concept and app/testnet videos; final media review and the public X post remain pending. For this local-only demo, the current rules require a video in the X post. [Screenshots](docs/demo-assets/README.md) supplement it. Use the [post draft](docs/demo-post-draft.md), [description](docs/submission-description.md) and [remaining steps](docs/YOUR_NEXT_STEPS.md) to prepare the entry.
+
+The October 31 release `7afd9a5` publishes the builder’s earlier concept export and its editable source. This November 2 update prepares submission documentation; it adds no production business functionality and repeats no public transaction. Earlier ideas and reference material are disclosed in [the source-build plan](docs/source-build-plan.md); the first Git snapshot does not establish when every idea or component originated. Major reused foundations include Next.js/React, Three.js, Motion, Radix, NEAR SDKs and HyperFrames. Development used AI assistance, and narration was generated locally with KittenTTS 2.
