@@ -25,3 +25,5 @@ The intended holder experience is buy and hold. Ordinary payouts would arrive in
 The working demo shows the agents' discussions, how spending is controlled, and how failed payments can be completed later. A separate demonstration on NEAR has completed funding, an expense, an investment cycle and holder payments using demo tokens. NEAR applies the spending rules and records those payments.
 
 The demo tokens have no cash backing, and the example investment returns are funded for the demonstration. The token launch, live investing and automatic USDC payouts are still being built.
+
+[Try the working prototype](docs/JUDGE_GUIDE.md) · [Watch the app walkthrough](docs/demo-assets/greed-machine-walkthrough.mp4)

@@ -1,0 +1,104 @@
+{
+  "passed": true,
+  "file": "docs/demo-assets/greed-machine-walkthrough.mp4",
+  "sha256": "6e2b4ac27c8820ed074d5b5f846fbce95364faadc69230437280e43bc16dd1ca",
+  "bytes": 5677473,
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 2400,
+    "duration": 80.0,
+    "completeDecodePassed": true
+  },
+  "audio": {
+    "provider": "ElevenLabs",
+    "voice": "River",
+    "model": "eleven_multilingual_v2",
+    "codec": "aac",
+    "channels": 2,
+    "sampleRate": 48000,
+    "measurement": "native decoded channels; no downmix",
+    "peakDb": -1.0,
+    "rmsDb": -26.35,
+    "clippedSamples": 0,
+    "voiceLevels": [
+      {
+        "id": "welcome",
+        "rmsDb": -23.53
+      },
+      {
+        "id": "cycle",
+        "rmsDb": -23.83
+      },
+      {
+        "id": "security",
+        "rmsDb": -23.06
+      },
+      {
+        "id": "payouts",
+        "rmsDb": -23.25
+      },
+      {
+        "id": "proof",
+        "rmsDb": -23.58
+      },
+      {
+        "id": "results",
+        "rmsDb": -23.56
+      },
+      {
+        "id": "verify",
+        "rmsDb": -23.96
+      },
+      {
+        "id": "limits",
+        "rmsDb": -23.76
+      }
+    ]
+  },
+  "captionGroups": 18,
+  "captionTimingSource": "ElevenLabs native character alignment",
+  "decodedFrameTimes": [
+    0,
+    5.0,
+    9.966666666666667,
+    10,
+    10.033333333333333,
+    11,
+    12,
+    15.0,
+    19.966666666666665,
+    20,
+    20.033333333333335,
+    25.0,
+    29.966666666666665,
+    30,
+    30.033333333333335,
+    31,
+    35.0,
+    36,
+    38,
+    39.96666666666667,
+    40,
+    40.03333333333333,
+    45.0,
+    49.96666666666667,
+    50,
+    50.03333333333333,
+    56.0,
+    61.96666666666667,
+    62,
+    62.03333333333333,
+    64,
+    67,
+    70,
+    71.96666666666667,
+    72,
+    72.03333333333333,
+    76.0,
+    79.9
+  ],
+  "audioReview": "Sound measured, not heard. Human listening remains before posting."
+}

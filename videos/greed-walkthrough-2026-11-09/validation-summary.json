@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "version": "0.9.5",
+  "duration": 80,
+  "checks": {
+    "lint": {
+      "errors": 0,
+      "warnings": 0,
+      "info": 0
+    },
+    "runtime": {
+      "errors": 0,
+      "warnings": 0,
+      "info": 0
+    },
+    "layout": {
+      "errors": 0,
+      "warnings": 0,
+      "info": 2
+    },
+    "motion": {
+      "errors": 0,
+      "warnings": 0,
+      "info": 0
+    },
+    "contrast": {
+      "errors": 0,
+      "warnings": 0,
+      "info": 0
+    },
+    "craft": {
+      "errors": 0,
+      "warnings": 0,
+      "info": 0
+    },
+    "audio": {
+      "errors": 0,
+      "warnings": 0,
+      "info": 0
+    }
+  },
+  "retainedInfo": "Intentional verification camera crop at 66.667s; see REVIEW.md",
+  "review": "Eight scene starts/midpoints, seven cut strips, phone sheet and action frames visually inspected",
+  "audio": "Native ElevenLabs timing; sound measured, not heard"
+}

@@ -20,3 +20,10 @@ demo-video/.waveform-cache/
 .archive/
 private-submission/
 **/__pycache__/
+
+# Local video working files
+videos/**/.hyperframes/
+videos/**/output/
+videos/**/assets/recordings/
+videos/**/.thumbnails/
+videos/**/.waveform-cache/

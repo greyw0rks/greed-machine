@@ -1,3 +1,21 @@
+# Greed Machine checkpoint — November 11, 2026
+
+## Current handoff
+
+**Already submitted.** The live directory lists entry `4e50d9a7-3ef3-4a68-9307-01d46c96e184`, with https://x.com/Greyw0rks/status/2117323746600161676 and tracks defi/business/swarms/security/agents/memecoins. Older unsubmitted instructions below are historical and superseded. Use Request changes for corrections; do not send a new application.
+
+The user requested fixes after the [November 9 review](hackathon-review-2026-11-09.md) and chose to finish the honest testnet package. This revision adds an [app-only judge guide](JUDGE_GUIDE.md), links it from the simple README, fixes the submission-status handoff and prepares accurate walkthrough/post/description material. Production revenue, fee routing, live DeFi and USDC payouts remain future work.
+
+The application code is unchanged. November 9 review verification passed 54 application tests, TypeScript, production build, 18 foundation browser captures and four proof checks. Public `main` at `30cf44d` matched 105 implementation/configuration files. Read-only NEAR verification reconciled 1,004.55 gUSD treasury, 8.45 paid and zero liabilities at finalized block 276840299, observed 2026-11-08T23:08:16.290Z. These application checks were not rerun for the documentation/media publication.
+
+The [80-second actual-app walkthrough](demo-assets/greed-machine-walkthrough.mp4) is exported, with editable source in `videos/greed-walkthrough-2026-11-09/`. It uses real browser captures, ElevenLabs River narration, 18 aligned caption groups and read-only verification at finalized block 276844141. HyperFrames 0.9.5 checks passed with zero errors and warnings. The [delivery report](demo-assets/walkthrough-delivery-check.json) verifies the encoded file, complete decode, audio levels and caption timing. Human listening remains before posting. Earlier concept exports remain preserved. The normal database, disabled scheduler and private signing journals must remain untouched.
+
+The user authorized publication of the judge guide, corrected documentation, walkthrough source and existing export on November 10, and asked to finish on November 11. This revision publishes that package from `/home/greyw0rks/greed-machine-submission-20261102` on `codex/greed-judge-fixes-20261109`, based on public `main`. November 11 checks passed for all 79 staged files, 68 local documentation links and 26 composition/media references, with no credential-pattern findings or whitespace errors. Fresh complete-decode, audio-level and caption-timing verification reproduced the delivery report and film SHA-256 `6e2b4ac27c8820ed074d5b5f846fbce95364faadc69230437280e43bc16dd1ca`. The original workspace's older Git branch and unrelated media changes remain preserved. Remaining human steps are listening to the film, publishing the tagged X walkthrough and requesting a correction to the existing entry's demo URL. No replacement post or organizer change request has been sent by this work.
+
+## Archived November 2 handoff
+
+All submission-status and next-step statements in this historical section are superseded by the current handoff above.
+
 # Greed Machine checkpoint — November 2, 2026
 
 ## Current handoff

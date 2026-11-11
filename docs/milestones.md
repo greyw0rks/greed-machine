@@ -64,17 +64,20 @@ Provider invoice lookup remains manual. Model analysis does not turn the synthet
 
 gUSD is unbacked, the vault result is sponsor-funded, and the snapshot is operator-attested within an immutable roster. This separate rehearsal is not the simulation foundation's production adapter. Public business deployment and initial repository publication were subsequently completed, as recorded below.
 
-## Next: publication and submission preparation
+## Current: improve the existing hackathon entry
 
-1. The public rehearsal, finalized verification, refreshed screenshots and initial repository publication are complete. The November 2 package adds licensing, development-scope links, updated X copy and a prepared description.
-2. The builder renders/exports and reviews the new 80-second app/testnet walkthrough and selected 60-second concept film. Final caption/playback review remains open in the local video projects.
-3. The human publishes their X demo post with the reviewed video, “built at NEAR HACKATHON,” `@NEARProtocol` and `#NEARHackathon`, then supplies the public URL and submission fields.
-4. Re-read live rules, validate the full payload and obtain approval before submitting during November 1–14. Follow [the checklist](submission-checklist.md). The builder confirmed November 2 that this is their only NEAR entry and has not been submitted.
+Greed Machine is already submitted as entry `4e50d9a7-3ef3-4a68-9307-01d46c96e184`. The November 9 directory check supersedes the older unsubmitted handoff. Do not submit again.
+
+The November 10 package adds an app-only judge guide, simple README links, corrected description and post copy, plus the 80-second actual-app walkthrough and editable source. Encoded-file verification and the recorded HyperFrames checks pass. Human listening remains before posting.
+
+1. Listen to the [walkthrough](demo-assets/greed-machine-walkthrough.mp4), then publish the prepared X post with “built at NEAR HACKATHON,” `@NEARProtocol` and `#NEARHackathon`.
+2. To replace the saved concept-demo URL, use [Request changes](https://nearhackathon.com/request-changes) for the existing entry. The [draft correction](entry-change-request.md) includes optional description and track changes.
+3. Save the request confirmation and verify that organizers applied it. Follow [the checklist](submission-checklist.md); original private fields and consent must not be inferred.
 
 ## Beyond the hackathon demonstration
 
 1. Specify launchpad/DEX fee routing, treasury launch allocation, exact holder split within 60–70%, treatment of fee revenue, payout cadence, eligibility and loss-recovery/reserve rules.
-2. Add receipt-backed launch and fee-income categories, explicit distribution cadence and reconstructable holder indexing under the chosen eligibility rules.
+2. Connect production launch and trading-fee receipts and build scalable holder indexing under the chosen eligibility rules. The completed rehearsal already demonstrates fixture funding categories, a fixed cadence and a bounded, reconstructable roster.
 3. Add period-level operating expense and distribution cost budgets; integrate automatic provider invoice lookup when a provider supports it.
 4. Replace the controlled fixture vault with a verified external DeFi adapter, finalized position reconciliation and the selected stablecoin instance.
 5. Add the selected launchpad purchase destination and reuse wallet governance only for core-policy changes.

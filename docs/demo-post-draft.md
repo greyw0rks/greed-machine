@@ -1,16 +1,16 @@
-# Unpublished X demo draft
+# Actual-app walkthrough post
 
-The human reviews and publishes this post with the exported app/testnet walkthrough attached. The agent has not posted it.
+The [existing entry](https://nearhackathon.com/api/projects?q=Greed&page=1) links [the November 2 concept post](https://x.com/Greyw0rks/status/2117323746600161676). This is corrected copy for the actual-app walkthrough. Publish it with the verified walkthrough attached, then request a demo-link change on the existing entry if desired.
 
 <!-- post:start -->
-How can holders inspect an agent-run treasury?
+AI treasury decisions should be inspectable.
 
-Greed Machine, built at NEAR HACKATHON: NEAR contracts cap spending and settle demo-token payouts. Watch a failed payout retry. What rule would you add?
+Greed Machine, built at NEAR HACKATHON: see stale data block funding, a failed payout recover, and NEAR test-token balances reconcile.
 
 @NEARProtocol #NEARHackathon
 https://github.com/greyw0rks/greed-machine
 <!-- post:end -->
 
-The draft fits a standard 280-character X post using the 23-character shortened-link length. Attach the reviewed walkthrough, which shows the app simulation and the separate completed NEAR testnet proof. The concept film and [screenshots](demo-assets/README.md) may accompany it. gUSD is unbacked; vault returns are sponsor-funded fixtures, and production economics remain open.
+The post is 234 characters using X's 23-character shortened-link length. Attach [greed-machine-walkthrough.mp4](demo-assets/greed-machine-walkthrough.mp4), after its delivery review passes. It shows actual app interactions against an isolated simulation ledger and reads the preserved public NEAR rehearsal. gUSD is unbacked and returns are sponsor-funded fixtures.
 
-After posting, use the public X status URL as `demoUrl`. Local files and unposted drafts are not submission URLs.
+This draft is not a published status URL. No replacement post or organizer change request is claimed until it has a verified public URL or confirmation. The existing entry must not be resubmitted.

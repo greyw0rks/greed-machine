@@ -1,0 +1,490 @@
+{
+  "report": {
+    "completed": true,
+    "environment": "testnet",
+    "verifiedAt": "2026-10-25T22:47:12.095Z",
+    "limits": "Controlled fixture vault and unbacked gUSD; no actual market yield or USDC backing",
+    "accounts": {
+      "sponsor": "greed-biz-1584eb30.testnet",
+      "treasury": "treasury.greed-biz-1584eb30.testnet",
+      "vault": "vault.greed-biz-1584eb30.testnet",
+      "dollar": "dollar.greed-biz-1584eb30.testnet",
+      "token": "token.greed-biz-1584eb30.testnet",
+      "operator": "operator.greed-biz-1584eb30.testnet",
+      "guardian": "guardian.greed-biz-1584eb30.testnet",
+      "provider": "provider.greed-biz-1584eb30.testnet"
+    },
+    "contracts": {
+      "treasury": {
+        "codeHash": "Dv6uCtMHnd4BFWZArknHwPfxpm2eXDTsBtGgyKPoF7E5",
+        "wasmSha256": "bfe6b27e9b9b902c95747411a0edb14214cc8b58d78f136629678d6c8146fa1e"
+      },
+      "vault": {
+        "codeHash": "DRoRQ5RWEmAF42ewzxbND7i2dLmAV76LpqUjpmoimYNv",
+        "wasmSha256": "b8a6aba816697772e067f39ac66225c4ea7fd1d8a355bb84ba0220baaabf0603"
+      },
+      "dollar": {
+        "codeHash": "A9MBzLzezKhzgfKbyrzTTuKyhQAVGW4MjBKxr7Ex1mgS",
+        "wasmSha256": "87dca8380f49be755ab54faf631a5bea0d65169466280b450d3adf6308b7bdaf"
+      },
+      "token": {
+        "codeHash": "A9MBzLzezKhzgfKbyrzTTuKyhQAVGW4MjBKxr7Ex1mgS",
+        "wasmSha256": "87dca8380f49be755ab54faf631a5bea0d65169466280b450d3adf6308b7bdaf"
+      }
+    },
+    "reports": [
+      {
+        "name": "compiled contracts initialize atomically and match pinned code hashes",
+        "passed": true
+      },
+      {
+        "name": "launch principal and project-fee fixture transfers remain separate",
+        "passed": true
+      },
+      {
+        "name": "receipt-backed expense debits net result once within the period budget",
+        "passed": true
+      },
+      {
+        "name": "bounded capital reaches the actual NEAR vault position",
+        "passed": true
+      },
+      {
+        "name": "guardian pause blocks commitments while a funded position can exit",
+        "passed": true
+      },
+      {
+        "name": "returned principal and sponsor-funded result reconcile independently",
+        "passed": true
+      },
+      {
+        "name": "receipt-reconstructed GREED holders match the complete pinned token supply",
+        "passed": true
+      },
+      {
+        "name": "fixed period allocates only realized net profit using the illustrative 65/35 split",
+        "passed": true
+      },
+      {
+        "name": "GREED transfers after a frozen period do not rewrite its holder entitlements",
+        "passed": true
+      },
+      {
+        "name": "failed receiver keeps its protected entitlement without marking paid",
+        "passed": true
+      },
+      {
+        "name": "actual recipient token balances, cash and every ledger unit reconcile",
+        "passed": true
+      }
+    ],
+    "finalState": {
+      "schema_version": 1,
+      "environment": "testnet-demo-token",
+      "token": "dollar.greed-biz-1584eb30.testnet",
+      "vault": "vault.greed-biz-1584eb30.testnet",
+      "sponsor": "greed-biz-1584eb30.testnet",
+      "operator": "operator.greed-biz-1584eb30.testnet",
+      "guardian": "guardian.greed-biz-1584eb30.testnet",
+      "expense_receiver": "provider.greed-biz-1584eb30.testnet",
+      "roster": [
+        "alice.greed-biz-1584eb30.testnet",
+        "bob.greed-biz-1584eb30.testnet",
+        "carol.greed-biz-1584eb30.testnet"
+      ],
+      "cash": "1004550000",
+      "principal": "1000000000",
+      "reserved": "0",
+      "net": "13000000",
+      "watermark": "13000000",
+      "paid": "8450000",
+      "liabilities": "0",
+      "expense_pending": "0",
+      "expense_budget_used": "0",
+      "expense_budget": "10000000",
+      "reserve_floor": "250000000",
+      "max_spend": "100000000",
+      "holder_bps": 6500,
+      "cadence_ns": "60000000000",
+      "next_distribution_ns": "1792968390562283315",
+      "paused": false,
+      "active": null,
+      "period_count": 1
+    },
+    "period": {
+      "id": 0,
+      "snapshot_hash": "928eca3f7b7db14f7694c26c7899ecfca65ba9c117def5cfe214b92d07d4b608",
+      "holders": [
+        {
+          "account_id": "alice.greed-biz-1584eb30.testnet",
+          "weight": "150000"
+        },
+        {
+          "account_id": "bob.greed-biz-1584eb30.testnet",
+          "weight": "500000"
+        },
+        {
+          "account_id": "carol.greed-biz-1584eb30.testnet",
+          "weight": "350000"
+        }
+      ],
+      "profit": "13000000",
+      "holder_amount": "8450000",
+      "retained": "4550000",
+      "entitlements": [
+        {
+          "account_id": "alice.greed-biz-1584eb30.testnet",
+          "amount": "1267500",
+          "status": "PAID",
+          "attempts": 1
+        },
+        {
+          "account_id": "bob.greed-biz-1584eb30.testnet",
+          "amount": "4225000",
+          "status": "PAID",
+          "attempts": 1
+        },
+        {
+          "account_id": "carol.greed-biz-1584eb30.testnet",
+          "amount": "2957500",
+          "status": "PAID",
+          "attempts": 2
+        }
+      ]
+    },
+    "transactions": [
+      {
+        "hash": "AgRTToPtwBwjTkuzxySfmEiC3mymnV6p6524zbyrkewF",
+        "signer": "dollar.greed-biz-1584eb30.testnet",
+        "receiver": "dollar.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "1205612079916400000000",
+        "gasBurnt": "12279303361664"
+      },
+      {
+        "hash": "4p7oFXWWjK9e49jtqL1gB6cRb6xCEroLBx3pqYgGDb3t",
+        "signer": "token.greed-biz-1584eb30.testnet",
+        "receiver": "token.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "1285446726348300000000",
+        "gasBurnt": "13077649825983"
+      },
+      {
+        "hash": "5SvGzx53XtzYTfHY7w8WJHGYdC45Fgpnm67D28BPKec5",
+        "signer": "vault.greed-biz-1584eb30.testnet",
+        "receiver": "vault.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "1159594920051400000000",
+        "gasBurnt": "11819131763014"
+      },
+      {
+        "hash": "9FzXti8vbcEH5J9wWZX3nPfsoUMArMaEyRvori5f826W",
+        "signer": "treasury.greed-biz-1584eb30.testnet",
+        "receiver": "treasury.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "1875732432818100000000",
+        "gasBurnt": "18980506890681"
+      },
+      {
+        "hash": "DhB7imTftQ8F7DWQBtT6JQmDGn55ugYB7dNHDwWFSQHU",
+        "signer": "greed-biz-1584eb30.testnet",
+        "receiver": "dollar.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "181887011104900000000",
+        "gasBurnt": "2042052673549"
+      },
+      {
+        "hash": "3bB4F16CFo238aEWydfLHRdnTmCvagAenizNeGjc9XNK",
+        "signer": "greed-biz-1584eb30.testnet",
+        "receiver": "dollar.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "182272793910400000000",
+        "gasBurnt": "2045910501604"
+      },
+      {
+        "hash": "CXsqeE9Fo8pSUwaiirzJgAvCMvVDJge4DxEUTTgCC5U3",
+        "signer": "greed-biz-1584eb30.testnet",
+        "receiver": "dollar.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "182571011104900000000",
+        "gasBurnt": "2048892673549"
+      },
+      {
+        "hash": "DMpMKT6F3JCoRTdMVSebAgdYP1J74HGnRdCKywGKq7Tt",
+        "signer": "greed-biz-1584eb30.testnet",
+        "receiver": "dollar.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "182500793910400000000",
+        "gasBurnt": "2048190501604"
+      },
+      {
+        "hash": "5bXgRigdiC4U72XnYXxrDXxKgWP8HEUiuzZF5aMsQc6c",
+        "signer": "greed-biz-1584eb30.testnet",
+        "receiver": "dollar.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "182213229729400000000",
+        "gasBurnt": "2045314859794"
+      },
+      {
+        "hash": "4sjYTg8rcMcRL5vdZNER9DPEzff993YkN8NdkFShEbgp",
+        "signer": "greed-biz-1584eb30.testnet",
+        "receiver": "dollar.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "598387634529200000000",
+        "gasBurnt": "6653424032792"
+      },
+      {
+        "hash": "GQ6cGyQRKRcedaw68KhF4EH8VwjKahK1o3Ao23syHqDH",
+        "signer": "greed-biz-1584eb30.testnet",
+        "receiver": "dollar.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "598504485777500000000",
+        "gasBurnt": "6654592545275"
+      },
+      {
+        "hash": "Dk9GMA7HWN6f5G3s3HeuvFZdQzKsRaWST35UmrgjPMGF",
+        "signer": "greed-biz-1584eb30.testnet",
+        "receiver": "dollar.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "546768632301100000000",
+        "gasBurnt": "6137234010511"
+      },
+      {
+        "hash": "2oo6jPsQ2MVPzMgDCn6XiGFvCVm212TYP9KKSCDrf2Av",
+        "signer": "operator.greed-biz-1584eb30.testnet",
+        "receiver": "treasury.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "640595472235200000000",
+        "gasBurnt": "7075502409852"
+      },
+      {
+        "hash": "HhntCDbA6AA6Q42QCuM42pgMNQXN4Bn8QWr72wed6WQq",
+        "signer": "operator.greed-biz-1584eb30.testnet",
+        "receiver": "treasury.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "1008427284856100000000",
+        "gasBurnt": "11200185661061"
+      },
+      {
+        "hash": "Ex4XZN1guNmZcCXEJyNr6qVtxqG6EuKMVeBEhb7Do6kX",
+        "signer": "guardian.greed-biz-1584eb30.testnet",
+        "receiver": "treasury.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "182642480263500000000",
+        "gasBurnt": "2049607365135"
+      },
+      {
+        "hash": "Bz3v5qLnyYQb4pndd9aCGS63yNUwAehnvcKRBf6iXkK9",
+        "signer": "operator.greed-biz-1584eb30.testnet",
+        "receiver": "treasury.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "1379133399260800000000",
+        "gasBurnt": "15353611930108"
+      },
+      {
+        "hash": "GMxVBpUtftVjRDrKAyYPPqrFRtVmWpmRtfLXbpJjFnAW",
+        "signer": "guardian.greed-biz-1584eb30.testnet",
+        "receiver": "treasury.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "182380847249800000000",
+        "gasBurnt": "2046991034998"
+      },
+      {
+        "hash": "GvAdiaCnZYmAbE1pey9hxtQXJ7goPpJLUiZTRJG4esRS",
+        "signer": "alice.greed-biz-1584eb30.testnet",
+        "receiver": "token.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "214435709280000000000",
+        "gasBurnt": "2367539655300"
+      },
+      {
+        "hash": "7CoFk6Bp3aN8PuvqWbCyhs9NyW3zLLSvYxnSQKwio1Nf",
+        "signer": "operator.greed-biz-1584eb30.testnet",
+        "receiver": "treasury.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "237937890004000000000",
+        "gasBurnt": "2602561462540"
+      },
+      {
+        "hash": "JCAFSB11roLF4Dvy6VB7PKXvTDP9v4QAhZ56UaoAf9hF",
+        "signer": "bob.greed-biz-1584eb30.testnet",
+        "receiver": "token.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "214385352092400000000",
+        "gasBurnt": "2367036083424"
+      },
+      {
+        "hash": "6FucrvcL34JwNFVSmxzAqap51RJiwFPHZcHZY7Mwa5Y2",
+        "signer": "operator.greed-biz-1584eb30.testnet",
+        "receiver": "treasury.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "571495467865300000000",
+        "gasBurnt": "6607684928653"
+      },
+      {
+        "hash": "GaKrTwvcadhq5BLWk3uRBQojkSXwWo1tmAf4QLdJF37T",
+        "signer": "greed-biz-1584eb30.testnet",
+        "receiver": "dollar.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "182956793910400000000",
+        "gasBurnt": "2052750501604"
+      },
+      {
+        "hash": "CVdEFxcLriZXTyCc7bdcRKTnmkkbPkFFoP1oF1aaX1DS",
+        "signer": "operator.greed-biz-1584eb30.testnet",
+        "receiver": "treasury.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "610183584021200000000",
+        "gasBurnt": "6771383527712"
+      },
+      {
+        "hash": "DEtvq7DttksFGaiC6RnuP99dtpDqUGX4Rfs3oUaPrxyg",
+        "signer": "operator.greed-biz-1584eb30.testnet",
+        "receiver": "treasury.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "609198125937400000000",
+        "gasBurnt": "6761528946874"
+      },
+      {
+        "hash": "E5HzrG9nHzCATcFMUpr8TEokAdWk4pc4ZTqFQ3U9qtQi",
+        "signer": "operator.greed-biz-1584eb30.testnet",
+        "receiver": "treasury.greed-biz-1584eb30.testnet",
+        "nearGasCostYocto": "610070371838500000000",
+        "gasBurnt": "6770251405885"
+      }
+    ],
+    "snapshot": {
+      "tokenAccount": "token.greed-biz-1584eb30.testnet",
+      "codeHash": "A9MBzLzezKhzgfKbyrzTTuKyhQAVGW4MjBKxr7Ex1mgS",
+      "blockHash": "Cb2hBFRfhJS4ZZYWLUNTi4161g4BUgcfurryXJ8xEGLf",
+      "blockHeight": 274764862,
+      "totalSupply": "1000000",
+      "source": "reconstructed NEP-141 receipts",
+      "eventHash": "01dec1a8e520b5c44e0d9c886ffcb772bfbc0a2008224a8e772717b742dc2f9c",
+      "holders": [
+        {
+          "account_id": "alice.greed-biz-1584eb30.testnet",
+          "weight": "150000"
+        },
+        {
+          "account_id": "bob.greed-biz-1584eb30.testnet",
+          "weight": "500000"
+        },
+        {
+          "account_id": "carol.greed-biz-1584eb30.testnet",
+          "weight": "350000"
+        }
+      ],
+      "hash": "928eca3f7b7db14f7694c26c7899ecfca65ba9c117def5cfe214b92d07d4b608"
+    },
+    "decision": {
+      "agentMode": "deterministic fixture",
+      "debate": [
+        {
+          "agent": "Adversarial reviewer",
+          "text": "The sponsor funds returns; this is a transaction-mechanics rehearsal, not market yield. Verify deployed builds, liabilities and the receiver before signing."
+        },
+        {
+          "agent": "Capital scout",
+          "text": "Use only 100 demo dollars. Preserve the 25% reserve and every unpaid entitlement; exit remains available during guardian pause."
+        }
+      ],
+      "security": {
+        "approved": true,
+        "checks": [
+          {
+            "rule": "Immutable adapter",
+            "passed": true
+          },
+          {
+            "rule": "Spending cap",
+            "passed": true
+          },
+          {
+            "rule": "Liquid reserve and liabilities",
+            "passed": true
+          },
+          {
+            "rule": "No unresolved position or expense",
+            "passed": true
+          },
+          {
+            "rule": "Guardian pause",
+            "passed": true
+          }
+        ]
+      }
+    }
+  },
+  "observation": {
+    "blockHash": "8zJEjdtvUWsPMbDoaSCzKZEYw6T1n27drEAmJd15T1CR",
+    "blockHeight": 276844141,
+    "observedAt": "2026-11-08T23:46:46.076Z",
+    "state": {
+      "schema_version": 1,
+      "environment": "testnet-demo-token",
+      "token": "dollar.greed-biz-1584eb30.testnet",
+      "vault": "vault.greed-biz-1584eb30.testnet",
+      "sponsor": "greed-biz-1584eb30.testnet",
+      "operator": "operator.greed-biz-1584eb30.testnet",
+      "guardian": "guardian.greed-biz-1584eb30.testnet",
+      "expense_receiver": "provider.greed-biz-1584eb30.testnet",
+      "roster": [
+        "alice.greed-biz-1584eb30.testnet",
+        "bob.greed-biz-1584eb30.testnet",
+        "carol.greed-biz-1584eb30.testnet"
+      ],
+      "cash": "1004550000",
+      "principal": "1000000000",
+      "reserved": "0",
+      "net": "13000000",
+      "watermark": "13000000",
+      "paid": "8450000",
+      "liabilities": "0",
+      "expense_pending": "0",
+      "expense_budget_used": "0",
+      "expense_budget": "10000000",
+      "reserve_floor": "250000000",
+      "max_spend": "100000000",
+      "holder_bps": 6500,
+      "cadence_ns": "60000000000",
+      "next_distribution_ns": "1792968390562283315",
+      "paused": false,
+      "active": null,
+      "period_count": 1
+    },
+    "period": {
+      "id": 0,
+      "snapshot_hash": "928eca3f7b7db14f7694c26c7899ecfca65ba9c117def5cfe214b92d07d4b608",
+      "holders": [
+        {
+          "account_id": "alice.greed-biz-1584eb30.testnet",
+          "weight": "150000"
+        },
+        {
+          "account_id": "bob.greed-biz-1584eb30.testnet",
+          "weight": "500000"
+        },
+        {
+          "account_id": "carol.greed-biz-1584eb30.testnet",
+          "weight": "350000"
+        }
+      ],
+      "profit": "13000000",
+      "holder_amount": "8450000",
+      "retained": "4550000",
+      "entitlements": [
+        {
+          "account_id": "alice.greed-biz-1584eb30.testnet",
+          "amount": "1267500",
+          "status": "PAID",
+          "attempts": 1
+        },
+        {
+          "account_id": "bob.greed-biz-1584eb30.testnet",
+          "amount": "4225000",
+          "status": "PAID",
+          "attempts": 1
+        },
+        {
+          "account_id": "carol.greed-biz-1584eb30.testnet",
+          "amount": "2957500",
+          "status": "PAID",
+          "attempts": 2
+        }
+      ]
+    },
+    "treasuryTokenBalance": "1004550000",
+    "recipientBalances": [
+      {
+        "accountId": "alice.greed-biz-1584eb30.testnet",
+        "amount": "1267500"
+      },
+      {
+        "accountId": "bob.greed-biz-1584eb30.testnet",
+        "amount": "4225000"
+      },
+      {
+        "accountId": "carol.greed-biz-1584eb30.testnet",
+        "amount": "2957500"
+      }
+    ],
+    "reconciled": true
+  }
+}

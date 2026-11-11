@@ -1,0 +1,9 @@
+{
+  "name": "greed-walkthrough-2026-11-09",
+  "private": true,
+  "scripts": {
+    "preview": "npx hyperframes@0.9.5 preview",
+    "check": "npx hyperframes@0.9.5 check",
+    "render": "npx hyperframes@0.9.5 render"
+  }
+}

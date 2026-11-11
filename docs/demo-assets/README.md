@@ -1,6 +1,8 @@
 # Demo media
 
-The current submission videos are being rendered and exported by the builder. Use the reviewed 80-second app/testnet walkthrough as the X attachment for the local-only demo; the 60-second concept film can accompany it. The [existing concept film](greed-machine-demo.mp4) is the earlier verified October 28 cut, published October 31. [Its delivery report](video-delivery-check.json) remains preserved. Final exports and complete playback/caption review remain pending. The [earlier editable source](../../demo-video/README.md) is preserved. See [remaining steps](../YOUR_NEXT_STEPS.md).
+The [80-second app/testnet walkthrough](greed-machine-walkthrough.mp4) shows real application actions and read-only verification of the completed NEAR rehearsal. Its [editable source](../../videos/greed-walkthrough-2026-11-09/README.md), [review](../../videos/greed-walkthrough-2026-11-09/REVIEW.md) and [encoded-file delivery check](walkthrough-delivery-check.json) are included. It uses ElevenLabs River narration and 18 aligned caption groups. Human listening to the final film remains before posting.
+
+Use the walkthrough as the X attachment for the local-only demo. The [existing concept film](greed-machine-demo.mp4) is the earlier verified October 28 cut, published October 31, and can accompany it. [Its delivery report](video-delivery-check.json) and [earlier editable source](../../demo-video/README.md) remain preserved. See [remaining steps](../YOUR_NEXT_STEPS.md).
 
 ## Screenshots
 

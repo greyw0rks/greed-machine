@@ -1,0 +1,113 @@
+{
+  "source": "ElevenLabs native character alignment; sentence captions matching all eight scripts",
+  "groups": [
+    {
+      "line": "welcome",
+      "text": "Let's look inside Greed Machine.",
+      "start": 0.35,
+      "end": 2.091
+    },
+    {
+      "line": "welcome",
+      "text": "We will start with the app's simulation.",
+      "start": 2.091,
+      "end": 4.694
+    },
+    {
+      "line": "cycle",
+      "text": "Start a cycle.",
+      "start": 10.35,
+      "end": 11.533999999999999
+    },
+    {
+      "line": "cycle",
+      "text": "Scouts propose strategies, and the swarm debates the evidence.",
+      "start": 11.533999999999999,
+      "end": 15.482999999999999
+    },
+    {
+      "line": "security",
+      "text": "Security checks each proposal.",
+      "start": 20.35,
+      "end": 22.289
+    },
+    {
+      "line": "security",
+      "text": "Here, stale data blocks funding.",
+      "start": 22.289,
+      "end": 24.462000000000003
+    },
+    {
+      "line": "payouts",
+      "text": "Follow the holder payments.",
+      "start": 30.35,
+      "end": 32.033
+    },
+    {
+      "line": "payouts",
+      "text": "This failed payment stays protected, then succeeds on retry.",
+      "start": 32.033,
+      "end": 36.18
+    },
+    {
+      "line": "proof",
+      "text": "Now open the separate NEAR testnet proof.",
+      "start": 40.35,
+      "end": 43.252
+    },
+    {
+      "line": "proof",
+      "text": "These links show real demo token transfers.",
+      "start": 43.252,
+      "end": 46.691
+    },
+    {
+      "line": "results",
+      "text": "Holders received eight point four five demo dollars.",
+      "start": 50.35,
+      "end": 53.694
+    },
+    {
+      "line": "results",
+      "text": "The treasury retained four point five five.",
+      "start": 53.694,
+      "end": 56.830000000000005
+    },
+    {
+      "line": "verify",
+      "text": "Verify the finalized balances.",
+      "start": 62.35,
+      "end": 64.685
+    },
+    {
+      "line": "verify",
+      "text": "This reads existing evidence;",
+      "start": 64.718,
+      "end": 66.483
+    },
+    {
+      "line": "verify",
+      "text": "it does not send new payments.",
+      "start": 66.483,
+      "end": 68.83
+    },
+    {
+      "line": "limits",
+      "text": "Demo dollars are unbacked.",
+      "start": 72.35,
+      "end": 74.33699999999999
+    },
+    {
+      "line": "limits",
+      "text": "Returns are fixtures.",
+      "start": 74.36999999999999,
+      "end": 76.00699999999999
+    },
+    {
+      "line": "limits",
+      "text": "Production economics remain open.",
+      "start": 76.00699999999999,
+      "end": 78.45899999999999
+    }
+  ]
+}

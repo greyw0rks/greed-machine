@@ -1,12 +1,12 @@
-# Greed Machine — your remaining steps
+# Greed Machine: improve the existing entry
 
-Repository: https://github.com/greyw0rks/greed-machine. The application and completed NEAR testnet rehearsal are published. You confirmed November 2 that Greed Machine has not been submitted and that you are not entering another project in this NEAR hackathon.
+Greed Machine is **already submitted**, as confirmed by the [public directory](https://nearhackathon.com/api/projects?q=Greed&page=1). Its current demo is [the November 2 X post](https://x.com/Greyw0rks/status/2117323746600161676). Do not send another application.
 
-1. Render and export your selected videos. The current local projects are `videos/greed-walkthrough-2026-11-02/` (80 seconds) and `videos/greed-concept-2026-11-02/` (60 seconds). Watch the exports with sound and check captions, pronunciation and the full ending. Use the app/testnet walkthrough for the submission: it shows user actions and visible results. The concept film can accompany it. The existing `docs/demo-assets/greed-machine-demo.mp4` is the earlier verified October 28 concept film, already published; it does not verify either new export.
-2. Publish the [ready X post](demo-post-draft.md) with the reviewed walkthrough attached. Keep “built at NEAR HACKATHON,” `@NEARProtocol` and `#NEARHackathon`. The live rules require a video for a local-only demo. Copy the public post URL.
-3. Open https://nearhackathon.com/#apply. Confirm the project name **Greed Machine**, your lead name, contact email, exact team-size category, selected tracks, your own **mainnet NEAR prize account**, repository URL and X URL. Recommended tracks: **business, swarms, security, memecoins**. Review the [prepared description](submission-description.md).
-4. Agree to the contact notice if you accept it, review the complete entry and submit once before **November 14, 2026, 23:59 UTC / November 15, 00:59 Lagos**. Save the confirmation. Re-read the [live rules](https://nearhackathon.com/HACKATHON.md) immediately before submitting.
+1. Review the actual-app walkthrough export and [corrected X copy](demo-post-draft.md). The walkthrough shows simulation controls, a refused unsafe proposal, protected payment recovery and verification of the separate completed NEAR rehearsal. The earlier concept videos remain useful background.
+2. Publish that walkthrough post with the video attached and the exact event statement **“built at NEAR HACKATHON”**, `@NEARProtocol` and `#NEARHackathon`. Save the public URL.
+3. To replace the saved demo link, open [Request changes](https://nearhackathon.com/request-changes), supply the original entry's email, NEAR payout account and repository URL, and select the new demo URL. The [updated description](submission-description.md) and recommended **business, memecoins, security** tracks can be included if desired.
+4. Save the request confirmation. Check the directory after organizers review and apply the change. Until then, the existing entry stays unchanged.
 
-If you prefer agent-assisted API submission, provide the same details and follow [the checklist](submission-checklist.md). The full payload must be displayed and explicitly approved before sending; personal details and the persistent requestId stay outside the public repository.
+Repository: https://github.com/greyw0rks/greed-machine. Judges can follow [Try the working prototype](JUDGE_GUIDE.md) without a wallet, Rust or paid API key. The completed rehearsal uses unbacked gUSD and funded return fixtures; live DeFi, fee routing and production stablecoin payouts are future work.
 
-A hosted demo is optional. Keep the repository public through judging. Launchpad fee routing, live DeFi strategies, final economics and production stablecoin payouts remain future work.
+Development ends **November 14, 2026, 23:59 UTC / November 15, 00:59 Africa/Lagos**. Keep the repository public through judging. The contact email, payout account and other private original-entry fields are not available from the public directory and must not be guessed.

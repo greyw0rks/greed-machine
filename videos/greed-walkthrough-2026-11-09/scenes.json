@@ -1,0 +1,50 @@
+[
+  {
+    "id": "welcome",
+    "start": 0,
+    "duration": 10,
+    "title": "Inside Greed Machine."
+  },
+  {
+    "id": "cycle",
+    "start": 10,
+    "duration": 10,
+    "title": "Start a business cycle."
+  },
+  {
+    "id": "security",
+    "start": 20,
+    "duration": 10,
+    "title": "Permission has limits."
+  },
+  {
+    "id": "payouts",
+    "start": 30,
+    "duration": 10,
+    "title": "Follow the accounting."
+  },
+  {
+    "id": "proof",
+    "start": 40,
+    "duration": 10,
+    "title": "Now inspect the testnet proof."
+  },
+  {
+    "id": "results",
+    "start": 50,
+    "duration": 12,
+    "title": "A complete money cycle."
+  },
+  {
+    "id": "verify",
+    "start": 62,
+    "duration": 10,
+    "title": "Check finalized state."
+  },
+  {
+    "id": "limits",
+    "start": 72,
+    "duration": 8,
+    "title": "Inspect the proof. Know the limits."
+  }
+]

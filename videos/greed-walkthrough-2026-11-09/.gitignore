@@ -1,0 +1,14 @@
+node_modules/
+.hyperframes/
+output/
+*.mp4
+!assets/clips/*.mp4
+assets/recordings/
+assets/audio/voice/
+assets/audio/narration-kitten2.*
+assets/transcript*.json
+assets/caption-words.json
+greed-machine-kitten2.srt
+assets/audio/voice/raw/
+assets/audio/voice/attempt-1/
+__pycache__/

@@ -1,0 +1,161 @@
+{
+  "createdAt": "2026-11-08T23:46:53.850Z",
+  "temporaryDatabase": "isolated temporary SQLite ledger",
+  "simulation": true,
+  "source": "actual application browser interactions; NEAR observation is read-only",
+  "verificationWaitSeconds": 18.571,
+  "shots": [
+    {
+      "id": "welcome",
+      "path": "videos/greed-walkthrough-2026-11-09/assets/recordings/welcome.webm",
+      "start": 3.06,
+      "duration": 9,
+      "route": "/app"
+    },
+    {
+      "id": "cycle",
+      "path": "videos/greed-walkthrough-2026-11-09/assets/recordings/cycle.webm",
+      "start": 3.656,
+      "duration": 9,
+      "route": "/app/operator"
+    },
+    {
+      "id": "debate",
+      "path": "videos/greed-walkthrough-2026-11-09/assets/recordings/debate.webm",
+      "start": 2.706,
+      "duration": 9,
+      "route": "/app/swarm?cycle=883757bd-4dbf-4dc2-a132-60cfd219229c"
+    },
+    {
+      "id": "security",
+      "path": "videos/greed-walkthrough-2026-11-09/assets/recordings/security.webm",
+      "start": 3.353,
+      "duration": 9,
+      "route": "/app/risk?cycle=29bf875f-0193-474c-ba21-101e37f3df8a"
+    },
+    {
+      "id": "payouts",
+      "path": "videos/greed-walkthrough-2026-11-09/assets/recordings/payouts.webm",
+      "start": 2.514,
+      "duration": 9,
+      "route": "/app/distributions"
+    },
+    {
+      "id": "proof",
+      "path": "videos/greed-walkthrough-2026-11-09/assets/recordings/proof.webm",
+      "start": 2.421,
+      "duration": 9,
+      "route": "/testnet"
+    },
+    {
+      "id": "results",
+      "path": "videos/greed-walkthrough-2026-11-09/assets/recordings/results.webm",
+      "start": 2.575,
+      "duration": 11,
+      "route": "/testnet"
+    },
+    {
+      "id": "verify",
+      "path": "videos/greed-walkthrough-2026-11-09/assets/recordings/verify.webm",
+      "start": 3.387,
+      "duration": 9,
+      "route": "/testnet"
+    }
+  ],
+  "errors": [],
+  "observation": {
+    "blockHash": "8zJEjdtvUWsPMbDoaSCzKZEYw6T1n27drEAmJd15T1CR",
+    "blockHeight": 276844141,
+    "observedAt": "2026-11-08T23:46:46.076Z",
+    "state": {
+      "schema_version": 1,
+      "environment": "testnet-demo-token",
+      "token": "dollar.greed-biz-1584eb30.testnet",
+      "vault": "vault.greed-biz-1584eb30.testnet",
+      "sponsor": "greed-biz-1584eb30.testnet",
+      "operator": "operator.greed-biz-1584eb30.testnet",
+      "guardian": "guardian.greed-biz-1584eb30.testnet",
+      "expense_receiver": "provider.greed-biz-1584eb30.testnet",
+      "roster": [
+        "alice.greed-biz-1584eb30.testnet",
+        "bob.greed-biz-1584eb30.testnet",
+        "carol.greed-biz-1584eb30.testnet"
+      ],
+      "cash": "1004550000",
+      "principal": "1000000000",
+      "reserved": "0",
+      "net": "13000000",
+      "watermark": "13000000",
+      "paid": "8450000",
+      "liabilities": "0",
+      "expense_pending": "0",
+      "expense_budget_used": "0",
+      "expense_budget": "10000000",
+      "reserve_floor": "250000000",
+      "max_spend": "100000000",
+      "holder_bps": 6500,
+      "cadence_ns": "60000000000",
+      "next_distribution_ns": "1792968390562283315",
+      "paused": false,
+      "active": null,
+      "period_count": 1
+    },
+    "period": {
+      "id": 0,
+      "snapshot_hash": "928eca3f7b7db14f7694c26c7899ecfca65ba9c117def5cfe214b92d07d4b608",
+      "holders": [
+        {
+          "account_id": "alice.greed-biz-1584eb30.testnet",
+          "weight": "150000"
+        },
+        {
+          "account_id": "bob.greed-biz-1584eb30.testnet",
+          "weight": "500000"
+        },
+        {
+          "account_id": "carol.greed-biz-1584eb30.testnet",
+          "weight": "350000"
+        }
+      ],
+      "profit": "13000000",
+      "holder_amount": "8450000",
+      "retained": "4550000",
+      "entitlements": [
+        {
+          "account_id": "alice.greed-biz-1584eb30.testnet",
+          "amount": "1267500",
+          "status": "PAID",
+          "attempts": 1
+        },
+        {
+          "account_id": "bob.greed-biz-1584eb30.testnet",
+          "amount": "4225000",
+          "status": "PAID",
+          "attempts": 1
+        },
+        {
+          "account_id": "carol.greed-biz-1584eb30.testnet",
+          "amount": "2957500",
+          "status": "PAID",
+          "attempts": 2
+        }
+      ]
+    },
+    "treasuryTokenBalance": "1004550000",
+    "recipientBalances": [
+      {
+        "accountId": "alice.greed-biz-1584eb30.testnet",
+        "amount": "1267500"
+      },
+      {
+        "accountId": "bob.greed-biz-1584eb30.testnet",
+        "amount": "4225000"
+      },
+      {
+        "accountId": "carol.greed-biz-1584eb30.testnet",
+        "amount": "2957500"
+      }
+    ],
+    "reconciled": true
+  }
+}
